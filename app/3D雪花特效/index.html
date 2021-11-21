@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<title>雪花动画场景特效 - 听松阁</title>
+
+
+
+<style>
+html, body {
+  margin:0;
+  padding:0;
+  background:#001;
+}
+
+canvas {
+  display:block;
+}
+</style>
+
+
+<link rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="images/main.css">
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="images/ie6.css" />
+<![endif]-->
+<script src="images/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="images/lightbox.min.js"></script>
+<style type="text/css">
+.wrapper{ margin:0px auto; padding:20px; border:1px solid #CCC; background:#333; width:980px; font-size:12px;}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="img/an.ico"/>
+		<style type="text/css">
+			/*样式初始化*/
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			/*去除横向滚动条*/
+			body {
+				overflow-x: hidden;
+				overflow-y: hidden;
+				background-color: 000;
+				font-size:13px;
+				color: #ffffff;
+			}
+			/*将div铺满整个窗口*/
+			.box {
+				height: 100vh;
+				min-height: 520px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+background-color: 000;
+			}
+			/*设置大ul的大小及定位*/
+			.content {
+				position: relative;
+				width: 100%;
+				height: 100%;
+background-color: 000;
+			}
+			/*设置大li样式*/
+			.content li {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+		</style>
+<script data-ad-client="ca-pub-8742386847853865" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<noscript></head></noscript>
+	
+<body Scroll=no>
+
+<!-- 代码 开始 -->
+<div class="fish" style="position:absolute; width:1350px; height:500px; z-index:99; left: 20px; top: 10px;backgroud-color:000;">
+<table>
+	
+	<!-- 第1行 -->
+    <tr>
+     <td align="center" width="60"><a href="http://cloud.2345.ltd/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="folder" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/folder.gif" width="50" height="50" border="0" id="index_r2_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://photo.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/pictures.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://vip.2345.ltd/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="vip" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/vip.gif" width="50" height="50" border="0" id="index_r2_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://kylehao.ys168.com/" target="_blank"><img name="share" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/share.gif" width="50" height="50" border="0" id="index_r5_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://free.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="free" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/free.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td></td>
+    </tr>
+    <tr>
+     <td align="center" width="60">我的文档</td>
+     <td width="20"></td>
+     <td align="center" width="60">我的相册</td>
+     <td width="20"></td>
+     <td align="center" width="60">视频解析</td>
+     <td width="20"></td>
+     <td align="center" width="60">文件分享</td>
+     <td width="20"></td>
+     <td align="center" width="60">免费空间</td>
+     <td width="20"></td>
+     <td align="center"></td>
+    </tr>
+    <tr>
+     <td>&nbsp;</td>
+    </tr>
+    
+<!-- 第2行 -->   
+    <tr>
+     <td align="center" width="60"><a href="http://pan.2345.ltd/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="computer" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/computer.gif" width="50" height="50" border="0" id="index_r5_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://movie.2345.ltd/" target="_blank"><img name="movie" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/movie.gif" width="50" height="50" border="0" id="index_r5_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://www.free163.com/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="poem" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/poem.gif" width="50" height="50" border="0" id="index_r5_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.2345.ltd/OnedriveTJ/%E5%BE%B7%E4%BA%91%E7%A4%BE/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="dys" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/dys.gif" width="50" height="50" border="0" id="index_r5_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.2345.ltd/OnedriveTJ/%E9%9F%B3%E4%B9%90%E8%A7%86%E5%90%AC/%E5%94%AF%E7%BE%8E%E7%BA%AF%E9%9F%B3%E4%B9%90/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/wmcyy.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td width="60"></td>
+     <td width="20"></td>
+     <td width="60"></td>
+    </tr>
+    <tr>
+     <td align="center" width="60">我的电脑</td>
+     <td width="20"></td>
+     <td align="center" width="60">我的电影</td>
+     <td width="20"></td>
+     <td align="center" width="60">古典诗词</td>
+     <td width="20"></td>
+     <td align="center" width="60">德云社</td>
+     <td width="20"></td>
+     <td align="center" width="60">唯美音乐</td>
+     <td width="20"></td>
+     <td align="center"></td>
+     <td width="20"></td>
+     <td align="center"></td>
+    </tr>
+    <tr>
+     <td>&nbsp;</td>
+    </tr>
+    
+<!-- 第3行 -->
+    <tr>
+     <td align="center" width="60"><a href="https://git.64.gs/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="network" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/network.gif" width="50" height="50" border="0" id="index_r8_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://book.2345.ltd/" target="_blank"><img name="book" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/book.gif" width="50" height="50" border="0" id="index_r8_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://www.book.ga/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="wuxia" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/wuxia.gif" width="50" height="50" border="0" id="index_r8_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.2345.ltd/OnedriveTJ/%E9%9F%B3%E4%B9%90%E8%A7%86%E5%90%AC/%E7%BA%AF%E9%9F%B3%E4%B9%90/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="qyy" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/qyy.gif" width="50" height="50" border="0" id="index_r8_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.2345.ltd/OnedriveTJ/%E9%9F%B3%E4%B9%90%E8%A7%86%E5%90%AC/%E6%B2%BB%E6%84%88%E7%B3%BB%E6%94%BE%E7%A9%BA%E8%88%92%E7%BC%93%E9%9F%B3%E4%B9%90/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/zyxyy.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
+     <td></td>
+     <td width="20"></td>
+     <td></td>
+    </tr>
+    <tr>
+     <td align="center" width="60">我的网络</td>
+     <td width="20"></td>
+     <td align="center" width="60">我的图书</td>
+     <td width="20"></td>
+     <td align="center" width="60">武侠小说</td>
+     <td width="20"></td>
+     <td align="center" width="60">轻音乐</td>
+     <td width="20"></td>
+     <td align="center" width="60">治愈音乐</td>
+     <td width="20"></td>
+     <td align="center"></td>
+     <td width="20"></td>
+     <td align="center"></td>
+    </tr>
+    <tr>
+     <td>&nbsp;</td>
+    </tr>
+    
+<!-- 第4行 -->
+    <tr>
+     <td align="center" align="center" width="60"><a href="https://dwz.64.gs/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=300" class="lightbox"><img name="index_r11_c2" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/ie.gif" width="50" height="50" border="0" id="index_r11_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://blog.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="blog" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/blog.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://pan.2345.ltd/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="free" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/189.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.2345.ltd/OnedriveTJ/%E9%9F%B3%E4%B9%90%E8%A7%86%E5%90%AC/%E5%9B%BD%E8%AF%AD%E9%9F%B3%E4%B9%90/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="lxyy" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/lxyy.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.2345.ltd/OnedriveTJ/%E9%9F%B3%E4%B9%90%E8%A7%86%E5%90%AC/%E8%87%AA%E7%84%B6%E4%B9%8B%E5%A3%B0/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/zrzs.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td></td>
+     <td width="20"></td>
+    <td></td>
+    </tr>
+   <tr>
+    <td align="center" width="60">短网址</td>
+    <td width="20"></td>
+    <td align="center" width="60">我的博客</td>
+    <td width="20"></td>
+    <td align="center" width="60">天翼云盘</td>
+    <td width="20"></td>
+    <td align="center" width="60">流行音乐</td>
+    <td width="20"></td>
+    <td align="center" width="60">自然之声</td>
+    <td width="20"></td>
+    <td align="center"></td>
+    <td width="20"></td>
+    <td align="center"></td>
+   </tr>
+   <tr>
+    <td >&nbsp;</td>
+   </tr>
+<!-- 第5行 -->
+    <tr>
+     <td align="center" width="60"><a href="http://cloud.444.info/OnedriveTJ/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="index_r11_c2" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/ljt.gif" width="50" height="50" border="0" id="index_r11_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://mail.pu.cx/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="mail" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/mail.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://alist.444.info?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="aliyun" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/aliyun.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://game.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="game" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/game.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.444.info/OnedriveTJ/%E9%9F%B3%E4%B9%90%E8%A7%86%E5%90%AC/%E9%9F%A9%E5%9B%BD%E9%9F%B3%E4%B9%90/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/korea.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td></td>
+     <td width="20"></td>
+    <td></td>
+    </tr>
+   <tr>
+    <td align="center" width="60">回收站</td>
+    <td width="20"></td>
+    <td align="center" width="60">我的邮局</td>
+    <td width="20"></td>
+    <td align="center" width="60">阿里云盘</td>
+    <td width="20"></td>
+    <td align="center" width="60">我的游戏</td>
+    <td width="20"></td>
+    <td align="center" width="60">韩国音乐</td>
+    <td width="20"></td>
+    <td align="center"></td>
+    <td width="20"></td>
+    <td align="center"></td>
+   </tr>
+   <tr>
+    <td >&nbsp;</td>
+   </tr>
+<!-- 第6行 -->
+    <tr>
+     <td align="center" width="60"><a href="http://www.mp4.run/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=550" class="lightbox"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/music.gif" width="50" height="50" border="0" id="index_r11_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://down.2345.ltd/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="down" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/down.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.444.info/OnedriveTJ/%E9%9F%B3%E4%B9%90%E8%A7%86%E5%90%AC/%E6%97%A5%E6%9C%AC%E9%9F%B3%E4%B9%90/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="free" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/japan.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://cloud.444.info/OnedriveTJ/%E9%9F%B3%E4%B9%90%E8%A7%86%E5%90%AC/%E6%AC%A7%E7%BE%8E%E9%9F%B3%E4%B9%90/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/usa.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td></td>
+     <td width="20"></td>
+    <td></td>
+    </tr>
+   <tr>
+    <td align="center" width="60">我的音乐</td>
+    <td width="20"></td>
+    <td align="center" width="60">软件下载</td>
+    <td width="20"></td>
+    <td align="center" width="60">日本音乐</td>
+    <td width="20"></td>
+    <td align="center" width="60">欧美音乐</td>
+    <td width="20"></td>
+    <td align="center"></td>
+    <td width="20"></td>
+    <td align="center"></td>
+   </tr>
+   <tr>
+    <td >&nbsp;</td>
+   </tr>
+  </table>
+</div>
+
+
+
+
+
+<!-- 底部和按钮 -->
+<div class="fish" style="position:absolute; width:1365; height:39; z-index:97; left: 0px; bottom: -3px;backgroud-color:000;">
+<img src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_images/bottom.jpg" width="1366" height="39" border="0" alt="">
+
+</div>
+
+<div class="fish" style="position:absolute; width:50; height:50; z-index:98; left: 0px; bottom: -3px;backgroud-color:000;">
+<table>
+	<tr>
+		<td><a href="http://www.2345.ltd/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/space.gif" width="40" height="50" border="0" alt=""></a></td>
+		<td width="20">&nbsp;</td>
+		<td><a href="http://cloud.2345.ltd/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/space.gif" width="40" height="50" border="0" alt=""></a></td>
+		<td width="1050">&nbsp;</td>
+		<td><a href="http://wx.qq.com/?lightbox[iframe]=true&lightbox[width]=800&lightbox[height]=540" class="lightbox"><img src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
+		<td width="10">&nbsp;</td>
+		<td><a href="http://www.360.cn/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
+		<td width="7">&nbsp;</td>
+		<td><a href="http://mp3.2345.ltd/lx/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
+		<td width="6">&nbsp;</td>
+		<td><a href="http://mp3.2345.ltd/dys/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
+		<td width="4">&nbsp;</td>
+		<td><a href="http://mp3.2345.ltd/qyy/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
+		
+			
+	</tr>
+</table>
+</div>
+
+</div>
+<!-- 代码 结束 -->
+
+<canvas></canvas>
+
+
+
+<script>
+class Snow
+{
+    constructor() {
+
+        this.imageInfo        = 0;
+        this.snowFlakeEntropy = 100;
+        this.flakeCount       = 3000;
+
+        this.snowColor        = (v) => { return `hsl(0, 0%, ${50 + v * 40 | 0}%)`; };
+
+        this.canvas = document.querySelector('canvas');
+        this.engine = this.canvas.getContext('2d');
+
+        this.width  = window.innerWidth;
+        this.height = window.innerHeight;
+
+        this.minSize = 15;
+        this.maxSize = Math.max(5, this.width * 0.15 + this.height * 0.15);
+
+        this.canvas.setAttribute('width', this.width);
+        this.canvas.setAttribute('height', this.height);
+
+        this.generateImages();
+        this.renderer = null;
+
+        this.build();
+        this.buildBackground();
+        this.buildForeground();
+
+    }
+
+    buildBackground() {
+
+        this.bg = this.engine.createLinearGradient(0,0,0,this.height);
+        this.bg.addColorStop(0, '#113');
+        this.bg.addColorStop(1, '#558');
+
+    }
+
+    buildForeground() {
+
+        this.fg = this.engine.createLinearGradient(0,0,0,this.height);
+        this.fg.addColorStop(0, 'rgba(0, 0, 0, 0.3)');
+        this.fg.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+    }
+
+    generateImages() {
+
+        this.flakeImages = new Array(this.snowFlakeEntropy);
+
+        for (let i = 0; i < this.snowFlakeEntropy; i++) {
+            this.flakeImages[i] = this.generateRandomFlake(i / this.snowFlakeEntropy);
+        }
+
+        console.log(`unique flakes builded: ${this.imageInfo}`);
+
+    }
+
+    build() {
+
+        this.flakeStorage = new Array(this.flakeCount).fill(null).map(() => {
+
+            const flake = {
+                img : this.flakeImages[Math.random() * this.flakeImages.length | 0]
+            };
+
+            this.resetFlake(flake);
+            flake.y = Math.random();
+
+            return flake;
+
+        });
+
+        this.flakeStorage.sort((f1, f2) => {
+            return f1.img.imgSize - f2.img.imgSize;
+        });
+
+
+    }
+
+    resetFlake(flake) {
+
+        flake.x  = Math.random();
+        flake.y  = 0;
+        flake.dx = Math.random();
+        flake.dy = Math.random();
+
+        flake.current = flake.img.samples[flake.img.samples.length * Math.random() | 0];
+
+    }
+
+
+    generateRandomFlake(s) {
+
+        const sizer   = Math.pow(s, 15);
+        const sCount  = 1 + Math.pow(s, 15) * 6 | 0;
+        // const sizer = Math.pow(s, 5);
+
+        const size    = this.minSize + sizer * this.maxSize;
+        const radius  = size * 0.45;
+        const imgSize = size * 1.4;
+
+        const samples = new Array(sCount);
+
+        for (let s = 0; s < sCount; s++) {
+
+            this.imageInfo++;
+
+            const blur    = Math.pow(size * 0.05, 1.05) * (Math.random() + 0.5) | 0;
+            const mid     = imgSize / 2;
+            const spread  = 0.2 + Math.random() * 0.35;
+
+            const lineWidth  = size * 0.05;
+            const beginAngle = Math.random() * Math.PI * 2;
+            const forkCount  = 5 + Math.random() * 5 | 0;
+
+            const canvas = document.createElement('canvas');
+            const engine = canvas.getContext('2d');
+
+            canvas.setAttribute('width', imgSize);
+            canvas.setAttribute('height', imgSize);
+
+            engine.lineCap     = 'round';
+            engine.filter      = `blur(${blur}px)`;
+            engine.strokeStyle = this.snowColor(sizer);
+
+
+            //main
+            engine.beginPath();
+
+            for (let i = 0; i < forkCount; i++) {
+
+                engine.moveTo(mid, mid);
+                engine.lineTo(
+                    mid + Math.cos(beginAngle + i / forkCount * Math.PI * 2) * radius * 0.7,
+                    mid + Math.sin(beginAngle + i / forkCount * Math.PI * 2) * radius * 0.7
+                );
+
+            }
+
+            engine.lineWidth = lineWidth * (Math.random() + 0.1);
+            engine.stroke();
+            engine.closePath();
+
+            //sub
+            engine.beginPath();
+
+            for (let i = 0; i < forkCount; i++) {
+
+                const depth = 0.3 * radius + 0.3 * Math.random() * radius;
+
+                const left  = depth + radius * 0.3 + radius * 0.4 * Math.random();
+                const right = depth + radius * 0.3 + radius * 0.4 * Math.random();
+
+                engine.moveTo(
+                    mid + Math.cos(beginAngle + i / forkCount * Math.PI * 2 - spread) * (left),
+                    mid + Math.sin(beginAngle + i / forkCount * Math.PI * 2 - spread) * (left)
+                );
+                engine.lineTo(
+                    mid + Math.cos(beginAngle + i / forkCount * Math.PI * 2) * depth,
+                    mid + Math.sin(beginAngle + i / forkCount * Math.PI * 2) * depth
+                );
+                engine.lineTo(
+                    mid + Math.cos(beginAngle + i / forkCount * Math.PI * 2 + spread) * (right),
+                    mid + Math.sin(beginAngle + i / forkCount * Math.PI * 2 + spread) * (right)
+                );
+
+            }
+
+            engine.lineWidth   = lineWidth * 0.5 * (Math.random() + 0.1);
+            engine.strokeStyle = this.snowColor(sizer);
+            engine.stroke();
+            engine.closePath();
+
+            samples[s] = canvas;
+
+        }
+
+        return {
+            imgSize,
+            samples
+        }
+
+    }
+
+    progress(from, to, step) {
+        return from + (to - from) * step;
+    }
+
+    renderFlake(flake) {
+
+        flake.x += 0.0003 + flake.dx * 0.0003 * Math.pow(flake.img.imgSize * 0.03, 1.05);
+        flake.y += (0.003  + flake.dy * 0.015) * Math.pow(flake.img.imgSize * 0.003, 0.7);
+
+        (flake.y > 1 || flake.y < 0) && this.resetFlake(flake);
+
+        this.engine.drawImage(
+            flake.current,
+            this.progress(-flake.img.imgSize, this.width, flake.x % 1) | 0,
+            this.progress(-flake.img.imgSize, this.height, flake.y) | 0
+        );
+
+    }
+
+    render() {
+
+        this.engine.fillStyle = this.bg;
+        this.engine.fillRect(0, 0, this.width, this.height);
+
+        this.flakeStorage.forEach(this.renderFlake.bind(this));
+
+        this.engine.fillStyle = this.fg;
+        this.engine.fillRect(0, 0, this.width, this.height);
+
+        requestAnimationFrame(this.renderer);
+
+    }
+
+    run() {
+
+        this.renderer = this.render.bind(this);
+        this.renderer();
+
+    }
+}
+
+const a = new Snow();
+a.run();
+</script>
+
+
+
+
+</body>
+
+</html>
