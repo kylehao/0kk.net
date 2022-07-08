@@ -1,0 +1,812 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>听松阁音乐</title>
+<meta name="keywords" content="听松阁音乐" />
+<meta name="description" content="person music" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/player.css" />
+<link rel="Shortcut Icon" href="images/favicon.ico" />
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script>
+if ((!to3d()) || document.documentMode == 10 || document.documentMode == 11){ 
+	window.location="error/error.html";
+}
+</script>
+</head>
+<body>
+
+
+
+<!--头部 开始-->
+<div id="header">
+    <!--顶部bar 开始-->
+
+    <div id="headCont">
+        <audio id="audioPlayer"></audio>
+    	<!--二级导航-->
+        <nav class="sub_nav">
+            <div class="nav_list">
+                <ul>
+                    <li>
+                    	<a href="" class="smallogo">
+                        	<span class="mini_logo"></span>
+                        </a>
+                    </li>
+                    <li><a href="" class="home"></a></li>
+                    
+                    <div class="sub_list" id="sub_list">
+                        <p class="active">
+                        	<a href="?cat=9">That music dwells in my mind.</a>
+                        </p>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  	<!--头部导航  结束-->
+</div>
+
+<!-- 音乐馆 模块 开始  default-->
+<section class="section_cont">
+ 
+    
+
+    <div class="new_mv new_common">
+   
+        <div class="new_mv_title new_common_title index_mv_title">
+            <span>精品推荐</span>
+            <a href="?cat=6" class="more"></a>
+            <ul>
+                <li><a class="cur" href="javascript:;">dream</a></li>
+                <li><a href="javascript:;">spirit</a></li>
+                <li><a href="javascript:;">magic</a></li>
+            </ul>
+        </div>
+        
+        <div class="new_mv_body index_mv_body">
+         
+            <div class="mvList" id="mv_rank_list" style="display:block;">
+                <ul class="sb" id="main">
+			        <li>
+                        <a href="javascript:;" class="playIcon" >
+                            <img width="220" height="125" src="./images/singer/zhaolei.jpg" class="attachment-220x125 wp-post-image" alt="mv_1x2_10" /> 
+                            <strong>赵雷</strong>
+                            <span>
+                                 <font>赵雷-成都</font>
+                                 <font><i></i></font>
+                                 <font><i></i>1<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+		            <li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/taiduo.jpg" class="attachment-220x125 wp-post-image" alt="" />
+                            <strong>陈冠蒲-太多</strong>
+                            <span>
+                                <font>陈冠蒲-太多</font>
+                                <font><i></i></font>
+                                <font><i></i>2<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/shenhua.jpg" class="attachment-220x125 wp-post-image" alt="" />                
+                            <strong>成龙、金喜善</strong>
+                            <span>
+                                <font>成龙、金喜善-无尽的爱</font>
+                                <font><i></i></font>
+                                <font><i></i>3<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                           <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/dazhuang.jpg" class="attachment-220x125 wp-post-image" alt="" />                 
+                            <strong>大壮</strong>
+                            <span>
+                                <font>大壮-我们不一样</font>
+                                <font><i></i></font>
+                                <font><i></i>4<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                       <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/guangnzw.jpg" class="attachment-220x125 wp-post-image" alt="" />                      
+                            <strong>邓紫棋</strong>
+                            <span>
+                                <font>邓紫棋-光年之外</font>
+                                <font><i></i></font>
+                                <font><i></i>5<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/tonghua.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>光良</strong>
+                            <span>
+                                <font>光良-童话</font>
+                                <font><i></i></font>
+                                <font><i></i>6<em>11</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                      <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/moon.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>李玟</strong>
+                            <span>
+                                <font>李玟-月光爱人</font>
+                                <font><i></i></font>
+                                <font><i></i>7<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+				    <li>
+                       <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/nianshaoyw.jpg" class="attachment-220x125 wp-post-image" alt="" />                       
+                            <strong>李荣浩</strong>
+                            <span>
+                                <font>李荣浩-年少有为</font>
+                                <font><i></i></font>
+                                <font><i></i>8<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/wujiazj.jpg" class="attachment-220x125 wp-post-image" alt="" />                          
+                            <strong>李宇春</strong>
+                            <span>
+                                <font>李宇春-无价之姐</font>
+                                <font><i></i></font>
+                                <font><i></i>9<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/yanhuayl.jpg" class="attachment-220x125 wp-post-image" alt="" />        
+                            <strong>林志炫</strong>
+                            <span>
+                                <font>林志炫-烟花易冷</font>
+                                <font><i></i></font>
+                                <font><i></i>10<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+			    </ul>
+            </div>
+            
+            
+            
+            <!--2spirit-->
+            <div class="mvList">
+                <ul id="spirit">
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/furongyu.jpg" class="attachment-220x125 wp-post-image" alt="" />                            
+                            <strong>刘珂矣</strong>
+                            <span>
+                                <font>刘珂矣-芙蓉雨</font>
+                                <font><i></i></font>
+                                <font><i></i>1<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/shaonian.jpg" class="attachment-220x125 wp-post-image" alt="" />                        
+                            <strong>梦然</strong>
+                            <span>
+                                <font>梦然-少年</font>
+                                <font><i></i></font>
+                                <font><i></i>2<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/dayuezdj.jpg" class="attachment-220x125 wp-post-image" alt="" /> 
+                            <strong>齐秦</strong>
+                            <span>
+                                <font>齐秦-大约在冬季</font>
+                                <font><i></i></font>
+                                <font><i></i>3<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                       <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/qianshou.jpg" class="attachment-220x125 wp-post-image" alt="" />                        
+                            <strong>苏芮</strong>
+                            <span>
+                                <font>苏芮-牵手</font>
+                                <font><i></i></font>
+                                <font><i></i>4<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                       <a href="javascript:;" class="playIcon">
+                           <img width="220" height="125" src="./images/singer/nufangdesm.jpg" class="attachment-220x125 wp-post-image" alt="" />
+                            <strong>汪峰</strong>
+                            <span>
+                                <font>汪峰-怒放的生命</font>
+                                <font><i></i></font>
+                                <font><i></i>5<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                      <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/1999.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>王杰</strong>
+                            <span>
+                                <font>王杰-伤心1999</font>
+                                <font><i></i></font>
+                                <font><i></i>6<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                       <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/shijiandqnl.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>王铮亮</strong>
+                            <span>
+                                <font>王铮亮-时间都去哪儿了</font>
+                                <font><i></i></font>
+                                <font><i></i>7<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/jiaru.jpg" class="attachment-220x125 wp-post-image" alt="" />                       
+                            <strong>信乐团</strong>
+                            <span>
+                                <font>信乐团-假如</font>
+                                <font><i></i></font>
+                                <font><i></i>8<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/huaxiang.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>许韶洋</strong>
+                            <span>
+                                <font>许韶洋-花香</font>
+                                <font><i></i></font>
+                                <font><i></i>9<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/cengjingdn.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>许巍</strong>
+                            <span>
+                                <font>许巍-曾经的你</font>
+                                <font><i></i></font>
+                                <font><i></i>10<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+				</ul>
+            </div>
+            
+            
+            
+            <!--3magic-->
+            <div class="mvList">
+                <ul id="magic">
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/qingfeidy.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>庾澄庆</strong>
+                            <span>
+                                <font>庾澄庆-情非得已</font>
+                                <font><i></i></font>
+                                <font><i></i>1<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/nianlun.jpg" class="attachment-220x125 wp-post-image" alt="" />                         
+                            <strong>张碧晨</strong>
+                            <span>
+                                <font>张碧晨-年轮</font>
+                                <font><i></i></font>
+                                <font><i></i>2<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/mangzhong.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>赵方婧</strong>
+                            <span>
+                                <font>赵方婧-芒种</font>
+                                <font><i></i></font>
+                                <font><i></i>3<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/qinghuaci.jpg" class="attachment-220x125 wp-post-image" alt="" />                           
+                            <strong>周杰伦</strong>
+                            <span>
+                                <font>周杰伦-青花瓷</font>
+                                <font><i></i></font>
+                                <font><i></i>4<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/music/india.jpg" class="attachment-220x125 wp-post-image" alt="" /> 
+                            <strong>Meghna Mishra</strong>
+                            <span>
+                                <font>Meghna Mishra-NachdiPhirA</font>
+                                <font><i></i></font>
+                                <font><i></i>5<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/fengzhz.jpg" class="attachment-220x125 wp-post-image" alt="" />                            
+                            <strong>谷村新司</strong>
+                            <span>
+                                <font>谷村新司-风姿花传</font>
+                                <font><i></i></font>
+                                <font><i></i>6<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/duanqs.jpg" class="attachment-220x125 wp-post-image" alt="" />                         
+                            <strong>轻音乐</strong>
+                            <span>
+                                <font>轻音乐-断情殇</font>
+                                <font><i></i></font>
+                                <font><i></i>7<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/gee.jpg" class="attachment-220x125 wp-post-image" alt="" />  
+                            <strong>少女时代</strong>
+                            <span>
+                                <font>少女时代-Gee</font>
+                                <font><i></i></font>
+                                <font><i></i>8<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/wax.jpg" class="attachment-220x125 wp-post-image" alt="" />
+                            <strong>WAX</strong>
+                            <span>
+                                <font>WAX-改变化装</font>
+                                <font><i></i></font>
+                                <font><i></i>9<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="javascript:;" class="playIcon">
+                            <img width="220" height="125" src="./images/singer/sara.jpg" class="attachment-220x125 wp-post-image" alt="" />          
+                            <strong>Sara</strong>
+                            <span>
+                                <font>sara-即使知道要见面</font>
+                                <font><i></i></font>
+                                <font><i></i>10<em>10</em></font>
+                            </span>
+                        </a>
+                    </li>                  
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+   
+
+    <div class="songs_rcmd_title">
+        <div class="rcmd_left_title rcmd_title">
+            <span>国语流行TOP9</span>
+            <a href="more/china.html" target="_blank" class="more">/more</a>
+        </div>
+        <div class="rcmd_center_title rcmd_title">
+            <span>欧美流行TOP9</span>
+            <a href="more/usa.html" target="_blank" class="more">/more</a>
+        </div>
+        <div class="rcmd_right_title rcmd_title">
+            <span>纯音乐TOP9</span>
+            <a href="more/kong.html" target="_blank" class="more">/more</a>
+        </div>
+    </div>
+    
+    <div class="songs_rcmd" id="songs_rcmd">
+        <div class="songs_rcmd_cont">
+            <ul class="rcmd_left rcmd_cont" id="latest">
+				<li>
+                    <a href="" class="musicName">周深-大鱼</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">岑宁儿-追光者</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">迪丽热巴、汪苏泷-偏偏</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">胡夏、郁可唯-知否知否</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">李健-贝加尔湖畔</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">容祖儿-小小</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">田馥甄-小幸运</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">杨宗纬 张碧晨-凉凉</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">袁娅维-说散就散</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+            </ul>
+            
+            
+            
+            
+            <ul class="rcmd_center rcmd_cont" id="popular">
+				<li>
+                    <a href="javascript:;" class="musicName">AvrilLavigne-IamWithYou</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">BackstreetBoys-As_Long_As_You_Love_M</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">DemiLovato-LetItGo</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">EdSheeran-ShapeOfYou</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">JustinBieber-Baby</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">MinnieRiperton-LovingYou</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">SarahCoonor-just one last dance</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">布兰妮-everytime</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="musicName">席琳迪翁-MyHeartWillGoOn</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+            </ul>
+            
+            
+            
+            <ul class="rcmd_right rcmd_cont" id="rank">
+				<li>
+                    <a href="javascript:;" class="musicName">yiruma-雨的印记</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+				<li>
+                    <a href="javascript:;" class="musicName">班得瑞-安妮的仙境</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+				<li>
+                    <a href="javascript:;" class="musicName">杜普雷-殇</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+				<li>
+                    <a href="javascript:;" class="musicName">理查德 克莱德曼-致爱丽丝</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+				<li>
+                    <a href="javascript:;" class="musicName">理查德 克莱德曼-梦中的婚礼</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+				<li>
+                    <a href="javascript:;" class="musicName">理查德 克莱德曼-秋日私语</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+				<li>
+                    <a href="javascript:;" class="musicName">理查德 克莱德曼-水边的阿狄丽娜</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+				<li>
+                    <a href="javascript:;" class="musicName">宗次郎-故乡的原风景</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+				<li>
+                    <a href="javascript:;" class="musicName">雅尼-和兰花在一起</a>
+                    <a class="shareIcon" href="javascript:;"></a>
+                    <a class="playIcon" href="javascript:;"></a>
+                </li>
+			</ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="omnibus hot_singer">
+        <div class="omnibus_cont new_common">
+            <div class="omnibus_title new_common_title">
+                <span>其他国家音乐</span>
+                <a href="#" class="more"></a>
+            </div>
+            <ul id="omnibus_list">
+                <li class="post_big">
+                    <a href="./more/china1.html" target="_blank" >
+                        <img src="images/music/china1.jpg" alt="" width="305" height="290">
+                        <i></i>
+                    </a>
+                    <a href="./more/china1.html" target="_blank" >国语流行精选</a>
+                </li>
+                <li class="post_small">
+                    <a href="./more/korea.html" target="_blank" >
+                        <img src="images/music/korea.jpg" alt="" width="130" height="130">
+                        <span></span>
+                    </a>
+                    <a href="./more/korea.html" target="_blank" >韩国音乐</a>
+                </li>
+                <li class="post_small">
+                    <a href="./more/japan.html" target="_blank" >
+                        <img src='images/music/japan.jpg' alt="" width="130" height="130">
+                        <span></span>
+                    </a>
+                    <a href="./more/japan.html" target="_blank" >日本音乐</a>
+                </li>
+                <li class="post_small">
+                    <a href="./more/thailand.html" target="_blank" >
+                        <img src="images/music/thailand.jpg" alt="" width="130" height="130">
+                        <span></span>
+                    </a>
+                    <a href="./more/thailand.html" target="_blank" >泰国音乐</a>
+                </li>
+                <li class="post_small">
+                    <a href="./more/india.html" target="_blank" >
+                        <img src='images/music/india.jpg' alt="" width="130" height="130">
+                        <span></span>
+                    </a>
+                    <a href="./more/india.html" target="_blank" >印度音乐</a>
+                </li>
+                <li class="post_small">
+                    <a href="./more/denglj.html" target="_blank" >
+                        <img src='images/music/denglj.jpg' alt="" width="130" height="130">
+                        <span></span>
+                    </a>
+                    <a href="./more/denglj.html" target="_blank" >邓丽君</a>
+                </li>
+                <li class="post_small">
+                    <a href="./more/gufeng.html" target="_blank" >
+                        <img src="images/music/gufeng.jpg" alt="" width="130" height="130">
+                        <span></span>
+                    </a>
+                   <a href="./more/gufeng.html" target="_blank" >古风流行</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hot_singer_cont new_common">
+            <div class="hot_singer_title new_common_title">
+                <span>其他类型音乐</span>
+                <a href="#" class="more"></a>
+            </div>
+            <ul class="singer_list">
+                <li>
+                    <a href="./more/weimei.html" target="_blank" class="singerPhoto">
+                        <img src=" images/music/weimei.jpg" alt="" width="70" height="70"></a>
+                    <a href="./more/weimei.html" target="_blank" class="singer">唯美纯音乐</a>
+                </li>
+                <li>
+                    <a href="./more/zhiyu.html" target="_blank" class="singerPhoto">
+                        <img src="images/music/zhiyu.jpg" alt="" width="70" height="70"></a>
+                    <a href="./more/zhiyu.html" target="_blank" class="singer">治愈系音乐</a>
+                </li>
+                <li>
+                    <a href="./more/ziran.html" target="_blank" class="singerPhoto">
+                        <img src=" images/music/ziran.jpg" alt="" width="70" height="70"></a>
+                    <a href="./more/ziran.html" target="_blank" class="singer">自然之声</a>
+                </li>
+                <li>
+                   <a href="./more/movie.html" target="_blank" class="singerPhoto">
+                        <img src=" images/music/movie.jpg" alt="" width="70" height="70"></a>
+                    <a href="./more/movie.html" target="_blank" class="singer">影视金曲</a>
+                </li>
+                <li>
+                    <a href="./more/fengtm.html" target="_blank" class="singerPhoto">
+                        <img src='images/music/fengtm.jpg' alt="" width="70" height="70"></a>
+                    <a href="./more/fengtm.html" target="_blank" class="singer">冯提莫</a>
+                </li>
+                <li>
+                    <a href="./more/dys.html" target="_blank" class="singerPhoto">
+                        <img src=" images/music/dys.jpg" alt="" width="70" height="70"></a>
+                    <a href="./more/dys.html" target="_blank" class="singer">德云社</a>
+                </li>
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+    <div style="clear:both"></div></div>
+</section>
+
+
+
+
+
+<!-- 左侧播放器 开始-->
+<div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player">
+	<div class="jp-type-playlist">
+		<div id="jquery_jplayer_N"class="jp-jplayer"></div>
+		<div class="jp-gui">
+			<div class="jp-video-play">
+				<button class="jp-video-play-icon" role="button" tabindex="0">播放</button>
+			</div>
+			<div class="jp-interface">
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-current-time" role="timer" aria-label="time"></div>
+				<div class="jp-duration" role="timer" aria-label="duration"></div>
+				<div class="jp-controls-holder">
+					<div class="jp-controls">
+						<button class="jp-previous" role="button" tabindex="0">上一曲</button>
+						<button class="jp-play" role="button" tabindex="0">播放</button>
+						<button class="jp-next" role="button" tabindex="0">下一曲</button>
+						<button class="jp-stop" role="button" tabindex="0">暂停</button>
+					</div>
+					<div class="jp-volume-controls">
+						<button class="jp-mute" role="button" tabindex="0">静音</button>
+						<button class="jp-volume-max" role="button" tabindex="0">最大音量</button>
+						<div class="jp-volume-bar">
+							<div class="jp-volume-bar-value"></div>
+						</div>
+					</div>
+					<div class="jp-toggles">
+						<button class="jp-repeat" role="button" tabindex="0">重复</button>
+						<button class="jp-shuffle" role="button" tabindex="0">随机</button>
+						<!--<button class="jp-full-screen" role="button" tabindex="0">全屏</button>-->
+					</div>
+				</div>
+				<div class="jp-details">
+					<div class="jp-title" aria-label="title"></div>
+				</div>
+			</div>
+		</div>
+		<div class="jp-playlist">
+        	<div class="jp-playlist-box">
+                <ul>
+                    <!-- 该方法使用无序列表displayplaylist()播放列表 -->
+                    <li></li>
+                </ul>
+            </div>
+		</div>
+		<div class="jp-no-solution">
+			<span>升级需要</span>
+			您浏览器赞不支持播放，请更新版本
+            <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash插件</a>.
+		</div>
+	</div>
+    <!--歌曲列表滚动条-->
+    <div class="scrollBar">
+    	<div class="bar"></div>
+    </div>
+    <!--播放器展开隐藏按钮-->
+    <button type="button" class="folded_bt" title="点击收缩" id="btnfold">
+    	<span></span>
+   	</button>
+    <div id="listRemove"></div><!--移除全部歌曲按钮--> 
+    <div id="listClose"></div><!--歌曲列表展开收缩按钮-->
+</div>
+<!-- 左侧播放器 结束-->
+
+<!--底部 开始 -->
+<div class="footer" id="footer">
+	<div class="footer_cont">
+    	<div class="footer_cont_left">
+        	<p>
+            	<a href="">About me</a>|<a href="">History</a>|<a href="">Cartoon</a>|
+                <a href="">Ad service</a>|<a href="">Movie link</a>|<a href="">Help</a>
+            </p>
+            <p>
+            	Copyright © Youka  All Rights Reserved
+            </p>
+        </div>
+        <div class="footer_cont_right">
+        	<span>Other Links</span>
+        	<ul>
+                <li><a href=""><span></span></a></li>
+                <li><a href=""><span></span></a></li>
+                <li>
+					<a href="" class="twoCode">
+						<span></span>
+						<img class="tCode" src=" images/1517791716.png" width="100" height="100" alt="二维码" />
+					</a>
+				</li>
+                <li><a href=""><span></span></a></li>
+                <li><a href=""><span></span></a></li>
+            </ul>
+        </div>
+        <div id="toTop"></div>
+    </div>
+
+</div>
+<!--底部 结束 -->
+<script type="text/javascript" src=" js/jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!--播放器js-->
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/playlist.js"></script>
+<script type="text/javascript" src="js/player_database.js"></script>	
+<!--播放器js-->
+<!-- 底部模板调用 结束 -->
+</body>
+</html>
+
+

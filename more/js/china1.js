@@ -1,0 +1,991 @@
+﻿//播放列表
+var music_list =[
+{"id":"1","name":"ALin-给我一个理由忘记","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/ALin-给我一个理由忘记.mp3","images":"img/a1.jpg"},
+{"id":"2","name":"ALin-有一种悲伤","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/ALin-有一种悲伤.mp3","images":"img/a2.jpg"},
+{"id":"3","name":"Beyond-光辉岁月","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/Beyond-光辉岁月.mp3","images":"img/a3.jpg"},
+{"id":"4","name":"Beyond-喜欢你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/Beyond-喜欢你.mp3","images":"img/a4.jpg"},
+{"id":"5","name":"Beyond-真的爱你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/Beyond-真的爱你.mp3","images":"img/a5.jpg"},
+{"id":"6","name":"Ella[陈嘉桦]-都几岁了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/Ella[陈嘉桦]-都几岁了.mp3","images":"img/a1.jpg"},
+{"id":"7","name":"S.H.E-SuperStar","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/S.H.E-SuperStar.mp3","images":"img/a2.jpg"},
+{"id":"8","name":"S.H.E-波斯猫","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/S.H.E-波斯猫.mp3","images":"img/a3.jpg"},
+{"id":"9","name":"S.H.E-中国话","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/S.H.E-中国话.mp3","images":"img/a4.jpg"},
+{"id":"10","name":"TFBOYS-青春修炼手册","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/TFBOYS-青春修炼手册.mp3","images":"img/a5.jpg"},
+{"id":"11","name":"Twins-莫斯科没有眼泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/Twins-莫斯科没有眼泪.mp3","images":"img/a1.jpg"},
+{"id":"12","name":"Twins-下一站天后","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/Twins-下一站天后.mp3","images":"img/a2.jpg"},
+{"id":"13","name":"阿杜-坚持到底","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿杜-坚持到底.mp3","images":"img/a3.jpg"},
+{"id":"14","name":"阿杜-离别","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿杜-离别.mp3","images":"img/a4.jpg"},
+{"id":"15","name":"阿杜-撕夜","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿杜-撕夜.mp3","images":"img/a5.jpg"},
+{"id":"16","name":"阿杜-他一定很爱你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿杜-他一定很爱你.mp3","images":"img/a1.jpg"},
+{"id":"17","name":"阿杜-天黑","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿杜-天黑.mp3","images":"img/a2.jpg"},
+{"id":"18","name":"阿木-有一种爱叫做放手","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿木-有一种爱叫做放手.mp3","images":"img/a3.jpg"},
+{"id":"19","name":"阿悄-陪我去流浪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿悄-陪我去流浪.mp3","images":"img/a4.jpg"},
+{"id":"20","name":"阿桑-疯了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿桑-疯了.mp3","images":"img/a5.jpg"},
+{"id":"21","name":"阿桑-寂寞在唱歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿桑-寂寞在唱歌.mp3","images":"img/a1.jpg"},
+{"id":"22","name":"阿桑-受了点伤","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿桑-受了点伤.mp3","images":"img/a2.jpg"},
+{"id":"23","name":"阿桑-叶子","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿桑-叶子.mp3","images":"img/a3.jpg"},
+{"id":"24","name":"阿桑-一直很安静","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/阿桑-一直很安静.mp3","images":"img/a4.jpg"},
+{"id":"25","name":"安琥-天使的翅膀","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/安琥-天使的翅膀.mp3","images":"img/a5.jpg"},
+{"id":"26","name":"蔡健雅-红色高跟鞋","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡健雅-红色高跟鞋.mp3","images":"img/a1.jpg"},
+{"id":"27","name":"蔡琴-把悲伤留给自己","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡琴-把悲伤留给自己.mp3","images":"img/a2.jpg"},
+{"id":"28","name":"蔡琴-被遺忘的時光","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡琴-被遺忘的時光.mp3","images":"img/a3.jpg"},
+{"id":"29","name":"蔡幸娟-问情","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡幸娟-问情.mp3","images":"img/a4.jpg"},
+{"id":"30","name":"蔡徐坤-WaitWaitWait","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡徐坤-WaitWaitWait.mp3","images":"img/a5.jpg"},
+{"id":"31","name":"蔡依林、陶喆-今天你要嫁给我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡依林、陶喆-今天你要嫁给我.mp3","images":"img/a1.jpg"},
+{"id":"32","name":"蔡依林-LOVELOVELOVE","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡依林-LOVELOVELOVE.mp3","images":"img/a2.jpg"},
+{"id":"33","name":"蔡依林-爱情三十六计","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡依林-爱情三十六计.mp3","images":"img/a3.jpg"},
+{"id":"34","name":"蔡依林-布拉格广场","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡依林-布拉格广场.mp3","images":"img/a4.jpg"},
+{"id":"35","name":"蔡依林-看我72变","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡依林-看我72变.mp3","images":"img/a5.jpg"},
+{"id":"36","name":"蔡依林-日不落","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡依林-日不落.mp3","images":"img/a1.jpg"},
+{"id":"37","name":"蔡依林-我知道你很难过","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡依林-我知道你很难过.mp3","images":"img/a2.jpg"},
+{"id":"38","name":"蔡依林-舞娘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蔡依林-舞娘.mp3","images":"img/a3.jpg"},
+{"id":"39","name":"草蜢-宝贝对不起","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/草蜢-宝贝对不起.mp3","images":"img/a4.jpg"},
+{"id":"40","name":"草蜢-失恋阵线联盟","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/草蜢-失恋阵线联盟.mp3","images":"img/a5.jpg"},
+{"id":"41","name":"岑雨桥、萧全-触电(爱的魔力转圈圈)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/岑雨桥、萧全-触电(爱的魔力转圈圈).mp3","images":"img/a1.jpg"},
+{"id":"42","name":"曾春年-最幸福的人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/曾春年-最幸福的人.mp3","images":"img/a2.jpg"},
+{"id":"43","name":"陈百强-偏偏喜欢你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈百强-偏偏喜欢你.mp3","images":"img/a3.jpg"},
+{"id":"44","name":"陈百强-一生何求","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈百强-一生何求.mp3","images":"img/a4.jpg"},
+{"id":"45","name":"陈楚生-有没有人告诉你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈楚生-有没有人告诉你.mp3","images":"img/a5.jpg"},
+{"id":"46","name":"陈妃平-永远到底有多远","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈妃平-永远到底有多远.mp3","images":"img/a1.jpg"},
+{"id":"47","name":"陈冠蒲-就让你走","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈冠蒲-就让你走.mp3","images":"img/a2.jpg"},
+{"id":"48","name":"陈冠蒲-太多","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈冠蒲-太多.mp3","images":"img/a3.jpg"},
+{"id":"49","name":"陈光荣-再见...警察...再见","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈光荣-再见...警察...再见.mp3","images":"img/a4.jpg"},
+{"id":"50","name":"陈红-走过长安街","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈红-走过长安街.mp3","images":"img/a5.jpg"},
+{"id":"51","name":"陈慧琳-不如跳舞","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈慧琳-不如跳舞.mp3","images":"img/a1.jpg"},
+{"id":"52","name":"陈慧琳-记事本","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈慧琳-记事本.mp3","images":"img/a2.jpg"},
+{"id":"53","name":"陈慧娴-千千阙歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈慧娴-千千阙歌.mp3","images":"img/a3.jpg"},
+{"id":"54","name":"陈慧娴-人生何处不相逢","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈慧娴-人生何处不相逢.mp3","images":"img/a4.jpg"},
+{"id":"55","name":"陈琳-爱就爱了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈琳-爱就爱了.mp3","images":"img/a5.jpg"},
+{"id":"56","name":"陈琳-你的柔情我永远不懂","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈琳-你的柔情我永远不懂.mp3","images":"img/a1.jpg"},
+{"id":"57","name":"陈明-等你爱我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈明-等你爱我.mp3","images":"img/a2.jpg"},
+{"id":"58","name":"陈明-快乐老家","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈明-快乐老家.mp3","images":"img/a3.jpg"},
+{"id":"59","name":"陈明-为你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈明-为你.mp3","images":"img/a4.jpg"},
+{"id":"60","name":"陈明-我要找到你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈明-我要找到你.mp3","images":"img/a5.jpg"},
+{"id":"61","name":"陈明真-变心的翅膀","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈明真-变心的翅膀.mp3","images":"img/a1.jpg"},
+{"id":"62","name":"陈升、刘佳慧-北京一夜","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈升、刘佳慧-北京一夜.mp3","images":"img/a2.jpg"},
+{"id":"63","name":"陈淑桦-梦醒时分","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈淑桦-梦醒时分.mp3","images":"img/a3.jpg"},
+{"id":"64","name":"陈淑桦-情关","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈淑桦-情关.mp3","images":"img/a4.jpg"},
+{"id":"65","name":"陈淑桦-笑红尘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈淑桦-笑红尘.mp3","images":"img/a5.jpg"},
+{"id":"66","name":"陈伟霆、宝石Gem-野狼Disco","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈伟霆、宝石Gem-野狼Disco.mp3","images":"img/a1.jpg"},
+{"id":"67","name":"陈小春-没那种命","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈小春-没那种命.mp3","images":"img/a2.jpg"},
+{"id":"68","name":"陈小春-你好毒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈小春-你好毒.mp3","images":"img/a3.jpg"},
+{"id":"69","name":"陈小春-神啊救救我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈小春-神啊救救我.mp3","images":"img/a4.jpg"},
+{"id":"70","name":"陈小春-算你狠","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈小春-算你狠.mp3","images":"img/a5.jpg"},
+{"id":"71","name":"陈晓东-比我幸福","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈晓东-比我幸福.mp3","images":"img/a1.jpg"},
+{"id":"72","name":"陈旭-哥只是个传说","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈旭-哥只是个传说.mp3","images":"img/a2.jpg"},
+{"id":"73","name":"陈奕迅-浮夸","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陈奕迅-浮夸.mp3","images":"img/a3.jpg"},
+{"id":"74","name":"成龙、范晓萱-身不由己","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/成龙、范晓萱-身不由己.mp3","images":"img/a4.jpg"},
+{"id":"75","name":"成龙、金喜善-无尽的爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/成龙、金喜善-无尽的爱.mp3","images":"img/a5.jpg"},
+{"id":"76","name":"成龙、苏慧伦-在我生命中的每一天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/成龙、苏慧伦-在我生命中的每一天.mp3","images":"img/a1.jpg"},
+{"id":"77","name":"成龙-男儿当自强","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/成龙-男儿当自强.mp3","images":"img/a2.jpg"},
+{"id":"78","name":"成龙-你给我一片天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/成龙-你给我一片天.mp3","images":"img/a3.jpg"},
+{"id":"79","name":"成龙-英雄故事","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/成龙-英雄故事.mp3","images":"img/a4.jpg"},
+{"id":"80","name":"成龙-真的用了心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/成龙-真的用了心.mp3","images":"img/a5.jpg"},
+{"id":"81","name":"成龙-壮志在我胸","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/成龙-壮志在我胸.mp3","images":"img/a1.jpg"},
+{"id":"82","name":"程琳-信天游","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/程琳-信天游.mp3","images":"img/a2.jpg"},
+{"id":"83","name":"崔子格-卜卦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/崔子格-卜卦.mp3","images":"img/a3.jpg"},
+{"id":"84","name":"大鹏-都选C","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/大鹏-都选C.mp3","images":"img/a4.jpg"},
+{"id":"85","name":"大张伟-倍儿爽","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/大张伟-倍儿爽.mp3","images":"img/a5.jpg"},
+{"id":"86","name":"大张伟-我怎么这么好看","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/大张伟-我怎么这么好看.mp3","images":"img/a1.jpg"},
+{"id":"87","name":"大壮-我们不一样","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/大壮-我们不一样.mp3","images":"img/a2.jpg"},
+{"id":"88","name":"戴佩妮-爱疯了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/戴佩妮-爱疯了.mp3","images":"img/a3.jpg"},
+{"id":"89","name":"戴佩妮-街角的祝福","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/戴佩妮-街角的祝福.mp3","images":"img/a4.jpg"},
+{"id":"90","name":"戴佩妮-你要的爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/戴佩妮-你要的爱.mp3","images":"img/a5.jpg"},
+{"id":"91","name":"刀郎-2002年的第一场雪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刀郎-2002年的第一场雪.mp3","images":"img/a1.jpg"},
+{"id":"92","name":"刀郎-爱是你我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刀郎-爱是你我.mp3","images":"img/a2.jpg"},
+{"id":"93","name":"刀郎-冲动的惩罚","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刀郎-冲动的惩罚.mp3","images":"img/a3.jpg"},
+{"id":"94","name":"刀郎-披着羊皮的狼","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刀郎-披着羊皮的狼.mp3","images":"img/a4.jpg"},
+{"id":"95","name":"邓丽君-独上西楼","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邓丽君-独上西楼.mp3","images":"img/a5.jpg"},
+{"id":"96","name":"邓丽君-小城故事","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邓丽君-小城故事.mp3","images":"img/a1.jpg"},
+{"id":"97","name":"邓丽欣、方力申-十分爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邓丽欣、方力申-十分爱.mp3","images":"img/a2.jpg"},
+{"id":"98","name":"邓紫棋-光年之外","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邓紫棋-光年之外.mp3","images":"img/a3.jpg"},
+{"id":"99","name":"邓紫棋-你把我灌醉","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邓紫棋-你把我灌醉.mp3","images":"img/a4.jpg"},
+{"id":"100","name":"邓紫棋-泡沫","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邓紫棋-泡沫.mp3","images":"img/a5.jpg"},
+{"id":"101","name":"邓紫棋-喜欢你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邓紫棋-喜欢你.mp3","images":"img/a1.jpg"},
+{"id":"102","name":"迪克牛仔-有多少爱可以重来","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/迪克牛仔-有多少爱可以重来.mp3","images":"img/a2.jpg"},
+{"id":"103","name":"迪丽热巴、汪苏泷-偏偏","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/迪丽热巴、汪苏泷-偏偏.mp3","images":"img/a3.jpg"},
+{"id":"104","name":"电影原声-沧海一声笑","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/电影原声-沧海一声笑.mp3","images":"img/a4.jpg"},
+{"id":"105","name":"丁当-猜不透","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/丁当-猜不透.mp3","images":"img/a5.jpg"},
+{"id":"106","name":"丁当-手掌心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/丁当-手掌心.mp3","images":"img/a1.jpg"},
+{"id":"107","name":"动力火车-背叛情歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/动力火车-背叛情歌.mp3","images":"img/a2.jpg"},
+{"id":"108","name":"动力火车-当","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/动力火车-当.mp3","images":"img/a3.jpg"},
+{"id":"109","name":"动力火车-第一滴泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/动力火车-第一滴泪.mp3","images":"img/a4.jpg"},
+{"id":"110","name":"动力火车-明天的明天的明天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/动力火车-明天的明天的明天.mp3","images":"img/a5.jpg"},
+{"id":"111","name":"动力火车-无情的情书","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/动力火车-无情的情书.mp3","images":"img/a1.jpg"},
+{"id":"112","name":"动力火车-忠孝东路走九遍","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/动力火车-忠孝东路走九遍.mp3","images":"img/a2.jpg"},
+{"id":"113","name":"杜德伟-情人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杜德伟-情人.mp3","images":"img/a3.jpg"},
+{"id":"114","name":"范玮琪-一个像夏天一个像秋天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/范玮琪-一个像夏天一个像秋天.mp3","images":"img/a4.jpg"},
+{"id":"115","name":"范玮琪-最初的梦想","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/范玮琪-最初的梦想.mp3","images":"img/a5.jpg"},
+{"id":"116","name":"范玮琪-最重要的决定","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/范玮琪-最重要的决定.mp3","images":"img/a1.jpg"},
+{"id":"117","name":"范晓萱-雪人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/范晓萱-雪人.mp3","images":"img/a2.jpg"},
+{"id":"118","name":"范逸臣-放生","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/范逸臣-放生.mp3","images":"img/a3.jpg"},
+{"id":"119","name":"飞儿乐团-你的微笑","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/飞儿乐团-你的微笑.mp3","images":"img/a4.jpg"},
+{"id":"120","name":"飞儿乐团-千年之恋","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/飞儿乐团-千年之恋.mp3","images":"img/a5.jpg"},
+{"id":"121","name":"飞儿乐团-我们的爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/飞儿乐团-我们的爱.mp3","images":"img/a1.jpg"},
+{"id":"122","name":"费玉清-梦驼铃","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/费玉清-梦驼铃.mp3","images":"img/a2.jpg"},
+{"id":"123","name":"费玉清-一剪梅","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/费玉清-一剪梅.mp3","images":"img/a3.jpg"},
+{"id":"124","name":"冯晓泉-冰糖葫芦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/冯晓泉-冰糖葫芦.mp3","images":"img/a4.jpg"},
+{"id":"125","name":"凤飞飞-莫让红颜守空尘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/凤飞飞-莫让红颜守空尘.mp3","images":"img/a5.jpg"},
+{"id":"126","name":"凤飞飞-追梦人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/凤飞飞-追梦人.mp3","images":"img/a1.jpg"},
+{"id":"127","name":"付笛声、任静-知心爱人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/付笛声、任静-知心爱人.mp3","images":"img/a2.jpg"},
+{"id":"128","name":"甘萍-潮湿的心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/甘萍-潮湿的心.mp3","images":"img/a3.jpg"},
+{"id":"129","name":"高安,黑鸭子-红尘情歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/高安,黑鸭子-红尘情歌.mp3","images":"img/a4.jpg"},
+{"id":"130","name":"高胜美、左宏元-渡情","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/高胜美、左宏元-渡情.mp3","images":"img/a5.jpg"},
+{"id":"131","name":"高胜美-千年等一回","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/高胜美-千年等一回.mp3","images":"img/a1.jpg"},
+{"id":"132","name":"高胜美-青青河边草","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/高胜美-青青河边草.mp3","images":"img/a2.jpg"},
+{"id":"133","name":"高晓松-一个北京人在北京","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/高晓松-一个北京人在北京.mp3","images":"img/a3.jpg"},
+{"id":"134","name":"格格-火苗","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/格格-火苗.mp3","images":"img/a4.jpg"},
+{"id":"135","name":"贡维特-想你想到眼泪流","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/贡维特-想你想到眼泪流.mp3","images":"img/a5.jpg"},
+{"id":"136","name":"古巨基-好想好想","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/古巨基-好想好想.mp3","images":"img/a1.jpg"},
+{"id":"137","name":"光头李进-你在他乡还好吗","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/光头李进-你在他乡还好吗.mp3","images":"img/a2.jpg"},
+{"id":"138","name":"郭富城-动起来","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郭富城-动起来.mp3","images":"img/a3.jpg"},
+{"id":"139","name":"郭富城-对你爱不完","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郭富城-对你爱不完.mp3","images":"img/a4.jpg"},
+{"id":"140","name":"郭富城-我是不是该安静的走开","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郭富城-我是不是该安静的走开.mp3","images":"img/a5.jpg"},
+{"id":"141","name":"郭富城-樱花之恋","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郭富城-樱花之恋.mp3","images":"img/a1.jpg"},
+{"id":"142","name":"海伦-桥边姑娘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/海伦-桥边姑娘.mp3","images":"img/a2.jpg"},
+{"id":"143","name":"海鸣威-老人与海","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/海鸣威-老人与海.mp3","images":"img/a3.jpg"},
+{"id":"144","name":"韩宝仪-粉红色的回忆","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/韩宝仪-粉红色的回忆.mp3","images":"img/a4.jpg"},
+{"id":"145","name":"韩宝仪-往事只能回味","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/韩宝仪-往事只能回味.mp3","images":"img/a5.jpg"},
+{"id":"146","name":"韩红-天亮了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/韩红-天亮了.mp3","images":"img/a1.jpg"},
+{"id":"147","name":"韩红-天路","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/韩红-天路.mp3","images":"img/a2.jpg"},
+{"id":"148","name":"韩磊-等待","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/韩磊-等待.mp3","images":"img/a3.jpg"},
+{"id":"149","name":"韩磊-向天再借五百年","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/韩磊-向天再借五百年.mp3","images":"img/a4.jpg"},
+{"id":"150","name":"韩雪-飘雪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/韩雪-飘雪.mp3","images":"img/a5.jpg"},
+{"id":"151","name":"韩雪-想起","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/韩雪-想起.mp3","images":"img/a1.jpg"},
+{"id":"152","name":"杭天琪-前门情思大碗茶","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杭天琪-前门情思大碗茶.mp3","images":"img/a2.jpg"},
+{"id":"153","name":"浩瀚-分手在那个秋天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/浩瀚-分手在那个秋天.mp3","images":"img/a3.jpg"},
+{"id":"154","name":"何洁-你一定要幸福","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/何洁-你一定要幸福.mp3","images":"img/a4.jpg"},
+{"id":"155","name":"何璐-让她降落","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/何璐-让她降落.mp3","images":"img/a5.jpg"},
+{"id":"156","name":"何晟铭-佛说","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/何晟铭-佛说.mp3","images":"img/a1.jpg"},
+{"id":"157","name":"黑豹乐队-无地自容","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黑豹乐队-无地自容.mp3","images":"img/a2.jpg"},
+{"id":"158","name":"侯旭-逃","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/侯旭-逃.mp3","images":"img/a3.jpg"},
+{"id":"159","name":"后弦、sara-你还欠我一个拥抱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/后弦、sara-你还欠我一个拥抱.mp3","images":"img/a4.jpg"},
+{"id":"160","name":"后弦、柳岩-孙尚香","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/后弦、柳岩-孙尚香.mp3","images":"img/a5.jpg"},
+{"id":"161","name":"胡夏、李玉刚-将进酒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/胡夏、李玉刚-将进酒.mp3","images":"img/a1.jpg"},
+{"id":"162","name":"胡夏、郁可唯-知否知否","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/胡夏、郁可唯-知否知否.mp3","images":"img/a2.jpg"},
+{"id":"163","name":"胡杨林-香水有毒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/胡杨林-香水有毒.mp3","images":"img/a3.jpg"},
+{"id":"164","name":"花儿乐队-嘻唰唰","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/花儿乐队-嘻唰唰.mp3","images":"img/a4.jpg"},
+{"id":"165","name":"华晨宇-齐天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/华晨宇-齐天.mp3","images":"img/a5.jpg"},
+{"id":"166","name":"黄安-东南西北风","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄安-东南西北风.mp3","images":"img/a1.jpg"},
+{"id":"167","name":"黄安-新鸳鸯蝴蝶梦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄安-新鸳鸯蝴蝶梦.mp3","images":"img/a2.jpg"},
+{"id":"168","name":"黄安-样样红","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄安-样样红.mp3","images":"img/a3.jpg"},
+{"id":"169","name":"黄磊-我想我是海","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄磊-我想我是海.mp3","images":"img/a4.jpg"},
+{"id":"170","name":"黄品源-你怎么舍得我难过","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄品源-你怎么舍得我难过.mp3","images":"img/a5.jpg"},
+{"id":"171","name":"黄绮珊-剪爱(Live)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄绮珊-剪爱(Live).mp3","images":"img/a1.jpg"},
+{"id":"172","name":"黄小琥-伴","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄小琥-伴.mp3","images":"img/a2.jpg"},
+{"id":"173","name":"黄小琥-没那么简单","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄小琥-没那么简单.mp3","images":"img/a3.jpg"},
+{"id":"174","name":"黄小琥-顺其自然","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄小琥-顺其自然.mp3","images":"img/a4.jpg"},
+{"id":"175","name":"黄小琥-重来","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黄小琥-重来.mp3","images":"img/a5.jpg"},
+{"id":"176","name":"火箭少女101-卡路里","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/火箭少女101-卡路里.mp3","images":"img/a1.jpg"},
+{"id":"177","name":"霍尊-卷珠帘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/霍尊-卷珠帘.mp3","images":"img/a2.jpg"},
+{"id":"178","name":"贾乃亮,甜馨-大王叫我来巡山","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/贾乃亮,甜馨-大王叫我来巡山.mp3","images":"img/a3.jpg"},
+{"id":"179","name":"江美琪-亲爱的你怎么不在我身边","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/江美琪-亲爱的你怎么不在我身边.mp3","images":"img/a4.jpg"},
+{"id":"180","name":"江美琪-下辈子如果我还记得你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/江美琪-下辈子如果我还记得你.mp3","images":"img/a5.jpg"},
+{"id":"181","name":"江涛-愚公移山","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/江涛-愚公移山.mp3","images":"img/a1.jpg"},
+{"id":"182","name":"姜鹏-问佛","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/姜鹏-问佛.mp3","images":"img/a2.jpg"},
+{"id":"183","name":"姜育恒-梅花三弄","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/姜育恒-梅花三弄.mp3","images":"img/a3.jpg"},
+{"id":"184","name":"姜育恒-驿动的心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/姜育恒-驿动的心.mp3","images":"img/a4.jpg"},
+{"id":"185","name":"姜育恒-再回首","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/姜育恒-再回首.mp3","images":"img/a5.jpg"},
+{"id":"186","name":"蒋雪儿-梦的翅膀受了伤","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蒋雪儿-梦的翅膀受了伤.mp3","images":"img/a1.jpg"},
+{"id":"187","name":"蒋雪儿-谁在意我留下的泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/蒋雪儿-谁在意我留下的泪.mp3","images":"img/a2.jpg"},
+{"id":"188","name":"降央卓玛-西海情歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/降央卓玛-西海情歌.mp3","images":"img/a3.jpg"},
+{"id":"189","name":"金海心-爱似水仙","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/金海心-爱似水仙.mp3","images":"img/a4.jpg"},
+{"id":"190","name":"金海心-把耳朵叫醒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/金海心-把耳朵叫醒.mp3","images":"img/a5.jpg"},
+{"id":"191","name":"金海心-悲伤的秋千","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/金海心-悲伤的秋千.mp3","images":"img/a1.jpg"},
+{"id":"192","name":"金海心-那么骄傲","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/金海心-那么骄傲.mp3","images":"img/a2.jpg"},
+{"id":"193","name":"金南玲-逆流成河","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/金南玲-逆流成河.mp3","images":"img/a3.jpg"},
+{"id":"194","name":"金莎-星月神话","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/金莎-星月神话.mp3","images":"img/a4.jpg"},
+{"id":"195","name":"景岗山-我的眼里只有你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/景岗山-我的眼里只有你.mp3","images":"img/a5.jpg"},
+{"id":"196","name":"侃侃-滴答","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/侃侃-滴答.mp3","images":"img/a1.jpg"},
+{"id":"197","name":"筷子兄弟-小苹果","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/筷子兄弟-小苹果.mp3","images":"img/a2.jpg"},
+{"id":"198","name":"老狼-同桌的你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/老狼-同桌的你.mp3","images":"img/a3.jpg"},
+{"id":"199","name":"乐凡-你是我心里的宝","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/乐凡-你是我心里的宝.mp3","images":"img/a4.jpg"},
+{"id":"200","name":"雷佳-芦花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/雷佳-芦花.mp3","images":"img/a5.jpg"},
+{"id":"201","name":"冷漠-没有你陪伴我真的好孤单","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/冷漠-没有你陪伴我真的好孤单.mp3","images":"img/a1.jpg"},
+{"id":"202","name":"黎明-深秋的黎明","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/黎明-深秋的黎明.mp3","images":"img/a2.jpg"},
+{"id":"203","name":"李彩桦-我爱雨天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李彩桦-我爱雨天.mp3","images":"img/a3.jpg"},
+{"id":"204","name":"李春波-小芳","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李春波-小芳.mp3","images":"img/a4.jpg"},
+{"id":"205","name":"李慧珍-习惯","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李慧珍-习惯.mp3","images":"img/a5.jpg"},
+{"id":"206","name":"李佳璐-如果下辈子还能遇见你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李佳璐-如果下辈子还能遇见你.mp3","images":"img/a1.jpg"},
+{"id":"207","name":"李佳璐-无法原谅","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李佳璐-无法原谅.mp3","images":"img/a2.jpg"},
+{"id":"208","name":"李健-贝加尔湖畔","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李健-贝加尔湖畔.mp3","images":"img/a3.jpg"},
+{"id":"209","name":"李健-春风十里不如你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李健-春风十里不如你.mp3","images":"img/a4.jpg"},
+{"id":"210","name":"李健-风吹麦浪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李健-风吹麦浪.mp3","images":"img/a5.jpg"},
+{"id":"211","name":"李克勤-红日","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李克勤-红日.mp3","images":"img/a1.jpg"},
+{"id":"212","name":"李克勤-月半小夜曲","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李克勤-月半小夜曲.mp3","images":"img/a2.jpg"},
+{"id":"213","name":"李丽芬-爱江山更爱美人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李丽芬-爱江山更爱美人.mp3","images":"img/a3.jpg"},
+{"id":"214","name":"李丽芬-得意的笑","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李丽芬-得意的笑.mp3","images":"img/a4.jpg"},
+{"id":"215","name":"李玟、周杰伦-刀马旦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玟、周杰伦-刀马旦.mp3","images":"img/a5.jpg"},
+{"id":"216","name":"李玟-Baby对不起","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玟-Baby对不起.mp3","images":"img/a1.jpg"},
+{"id":"217","name":"李玟-DiDaDi","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玟-DiDaDi.mp3","images":"img/a2.jpg"},
+{"id":"218","name":"李玟-好心情","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玟-好心情.mp3","images":"img/a3.jpg"},
+{"id":"219","name":"李玟-美丽笨女人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玟-美丽笨女人.mp3","images":"img/a4.jpg"},
+{"id":"220","name":"李玟-想你的365天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玟-想你的365天.mp3","images":"img/a5.jpg"},
+{"id":"221","name":"李玟-月光爱人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玟-月光爱人.mp3","images":"img/a1.jpg"},
+{"id":"222","name":"李荣浩-不将就","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李荣浩-不将就.mp3","images":"img/a2.jpg"},
+{"id":"223","name":"李荣浩-李白","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李荣浩-李白.mp3","images":"img/a3.jpg"},
+{"id":"224","name":"李荣浩-麻雀","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李荣浩-麻雀.mp3","images":"img/a4.jpg"},
+{"id":"225","name":"李荣浩-模特","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李荣浩-模特.mp3","images":"img/a5.jpg"},
+{"id":"226","name":"李荣浩-年少有为","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李荣浩-年少有为.mp3","images":"img/a1.jpg"},
+{"id":"227","name":"李圣杰-痴心绝对","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李圣杰-痴心绝对.mp3","images":"img/a2.jpg"},
+{"id":"228","name":"李圣杰-手放开","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李圣杰-手放开.mp3","images":"img/a3.jpg"},
+{"id":"229","name":"李殊-原谅我过去不懂精卫填海主题曲","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李殊-原谅我过去不懂精卫填海主题曲.mp3","images":"img/a4.jpg"},
+{"id":"230","name":"李晓杰-朋友的酒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李晓杰-朋友的酒.mp3","images":"img/a5.jpg"},
+{"id":"231","name":"李昕融、樊桐舟、李凯稠-你笑起来真好看","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李昕融、樊桐舟、李凯稠-你笑起来真好看.mp3","images":"img/a1.jpg"},
+{"id":"232","name":"李翊君-风中的承诺","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李翊君-风中的承诺.mp3","images":"img/a2.jpg"},
+{"id":"233","name":"李翊君-沙漠寂寞","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李翊君-沙漠寂寞.mp3","images":"img/a3.jpg"},
+{"id":"234","name":"李翊君-婉君","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李翊君-婉君.mp3","images":"img/a4.jpg"},
+{"id":"235","name":"李翊君-雨蝶","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李翊君-雨蝶.mp3","images":"img/a5.jpg"},
+{"id":"236","name":"李宇春-梨花香","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李宇春-梨花香.mp3","images":"img/a1.jpg"},
+{"id":"237","name":"李宇春-无价之姐","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李宇春-无价之姐.mp3","images":"img/a2.jpg"},
+{"id":"238","name":"李雨儿、石头-雨花石","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李雨儿、石头-雨花石.mp3","images":"img/a3.jpg"},
+{"id":"239","name":"李玉刚-刚好遇见你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玉刚-刚好遇见你.mp3","images":"img/a4.jpg"},
+{"id":"240","name":"李玉刚-贵妃醉酒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玉刚-贵妃醉酒.mp3","images":"img/a5.jpg"},
+{"id":"241","name":"李玉刚-新贵妃醉酒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/李玉刚-新贵妃醉酒.mp3","images":"img/a1.jpg"},
+{"id":"242","name":"梁静茹-爱你不是两三天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/梁静茹-爱你不是两三天.mp3","images":"img/a2.jpg"},
+{"id":"243","name":"梁静茹-分手快乐","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/梁静茹-分手快乐.mp3","images":"img/a3.jpg"},
+{"id":"244","name":"梁静茹-会呼吸的痛","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/梁静茹-会呼吸的痛.mp3","images":"img/a4.jpg"},
+{"id":"245","name":"梁静茹-可惜不是你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/梁静茹-可惜不是你.mp3","images":"img/a5.jpg"},
+{"id":"246","name":"梁静茹-勇气","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/梁静茹-勇气.mp3","images":"img/a1.jpg"},
+{"id":"247","name":"林宸希-不再问","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林宸希-不再问.mp3","images":"img/a2.jpg"},
+{"id":"248","name":"林俊杰、蔡卓妍-小酒窝","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林俊杰、蔡卓妍-小酒窝.mp3","images":"img/a3.jpg"},
+{"id":"249","name":"林俊杰-背对背拥抱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林俊杰-背对背拥抱.mp3","images":"img/a4.jpg"},
+{"id":"250","name":"林俊杰-曹操","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林俊杰-曹操.mp3","images":"img/a5.jpg"},
+{"id":"251","name":"林俊杰-江南","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林俊杰-江南.mp3","images":"img/a1.jpg"},
+{"id":"252","name":"林俊杰-一千年以后","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林俊杰-一千年以后.mp3","images":"img/a2.jpg"},
+{"id":"253","name":"林心如-落花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林心如-落花.mp3","images":"img/a3.jpg"},
+{"id":"254","name":"林心如-倾听我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林心如-倾听我.mp3","images":"img/a4.jpg"},
+{"id":"255","name":"林忆莲-爱上一个不回家的人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林忆莲-爱上一个不回家的人.mp3","images":"img/a5.jpg"},
+{"id":"256","name":"林忆莲-不必在乎我是谁","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林忆莲-不必在乎我是谁.mp3","images":"img/a1.jpg"},
+{"id":"257","name":"林忆莲-伤痕","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林忆莲-伤痕.mp3","images":"img/a2.jpg"},
+{"id":"258","name":"林忆莲-为你我受冷风吹","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林忆莲-为你我受冷风吹.mp3","images":"img/a3.jpg"},
+{"id":"259","name":"林忆莲-至少还有你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林忆莲-至少还有你.mp3","images":"img/a4.jpg"},
+{"id":"260","name":"林宥嘉-你是我的眼","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林宥嘉-你是我的眼.mp3","images":"img/a5.jpg"},
+{"id":"261","name":"林志炫-operA","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林志炫-opera.mp3","images":"img/a1.jpg"},
+{"id":"262","name":"林志炫-单身情歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林志炫-单身情歌.mp3","images":"img/a2.jpg"},
+{"id":"263","name":"林志炫-没离开过","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林志炫-没离开过.mp3","images":"img/a3.jpg"},
+{"id":"264","name":"林志炫-蒙娜丽莎的眼泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林志炫-蒙娜丽莎的眼泪.mp3","images":"img/a4.jpg"},
+{"id":"265","name":"林志炫-烟花易冷","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林志炫-烟花易冷.mp3","images":"img/a5.jpg"},
+{"id":"266","name":"林志颖-稻草人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林志颖-稻草人.mp3","images":"img/a1.jpg"},
+{"id":"267","name":"林志颖-十七岁的雨季","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林志颖-十七岁的雨季.mp3","images":"img/a2.jpg"},
+{"id":"268","name":"林子祥-男儿当自强","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林子祥-男儿当自强.mp3","images":"img/a3.jpg"},
+{"id":"269","name":"林子祥-长路漫漫伴你闯","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/林子祥-长路漫漫伴你闯.mp3","images":"img/a4.jpg"},
+{"id":"270","name":"零点乐队-爱不爱我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/零点乐队-爱不爱我.mp3","images":"img/a5.jpg"},
+{"id":"271","name":"零点乐队-相信自己","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/零点乐队-相信自己.mp3","images":"img/a1.jpg"},
+{"id":"272","name":"刘德华&陈慧琳-我不够爱你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘德华&陈慧琳-我不够爱你.mp3","images":"img/a2.jpg"},
+{"id":"273","name":"刘德华-爱你一万年","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘德华-爱你一万年.mp3","images":"img/a3.jpg"},
+{"id":"274","name":"刘德华-冰雨","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘德华-冰雨.mp3","images":"img/a4.jpg"},
+{"id":"275","name":"刘德华-男人哭吧不是罪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘德华-男人哭吧不是罪.mp3","images":"img/a5.jpg"},
+{"id":"276","name":"刘德华-世界第一等","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘德华-世界第一等.mp3","images":"img/a1.jpg"},
+{"id":"277","name":"刘德华-天意","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘德华-天意.mp3","images":"img/a2.jpg"},
+{"id":"278","name":"刘德华-忘情水","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘德华-忘情水.mp3","images":"img/a3.jpg"},
+{"id":"279","name":"刘德华-我恨我痴心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘德华-我恨我痴心.mp3","images":"img/a4.jpg"},
+{"id":"280","name":"刘珂矣-半壶纱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘珂矣-半壶纱.mp3","images":"img/a5.jpg"},
+{"id":"281","name":"刘珂矣-芙蓉雨","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘珂矣-芙蓉雨.mp3","images":"img/a1.jpg"},
+{"id":"282","name":"刘若英-很爱很爱你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘若英-很爱很爱你.mp3","images":"img/a2.jpg"},
+{"id":"283","name":"刘若英-后来","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘若英-后来.mp3","images":"img/a3.jpg"},
+{"id":"284","name":"刘若英-为爱痴狂","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘若英-为爱痴狂.mp3","images":"img/a4.jpg"},
+{"id":"285","name":"刘若英-一辈子的孤单","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘若英-一辈子的孤单.mp3","images":"img/a5.jpg"},
+{"id":"286","name":"刘诗诗-等你的季节","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘诗诗-等你的季节.mp3","images":"img/a1.jpg"},
+{"id":"287","name":"刘惜君-拆心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘惜君-拆心.mp3","images":"img/a2.jpg"},
+{"id":"288","name":"刘惜君-我很快乐","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘惜君-我很快乐.mp3","images":"img/a3.jpg"},
+{"id":"289","name":"刘亦菲、杨洋-三生三世十里桃花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/刘亦菲、杨洋-三生三世十里桃花.mp3","images":"img/a4.jpg"},
+{"id":"290","name":"六哲-错错错","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/六哲-错错错.mp3","images":"img/a5.jpg"},
+{"id":"291","name":"卢冠廷-一生所爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/卢冠廷-一生所爱.mp3","images":"img/a1.jpg"},
+{"id":"292","name":"陆虎-雪落下的声音","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陆虎-雪落下的声音.mp3","images":"img/a2.jpg"},
+{"id":"293","name":"陆思恒、陆可儿-千禧恋曲2020","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陆思恒、陆可儿-千禧恋曲2020.mp3","images":"img/a3.jpg"},
+{"id":"294","name":"罗大佑、陈淑桦-滚滚红尘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/罗大佑、陈淑桦-滚滚红尘.mp3","images":"img/a4.jpg"},
+{"id":"295","name":"罗大佑-光阴的故事","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/罗大佑-光阴的故事.mp3","images":"img/a5.jpg"},
+{"id":"296","name":"罗大佑-你的样子","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/罗大佑-你的样子.mp3","images":"img/a1.jpg"},
+{"id":"297","name":"罗文、甄妮-铁血丹心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/罗文、甄妮-铁血丹心.mp3","images":"img/a2.jpg"},
+{"id":"298","name":"罗志祥-狐狸精","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/罗志祥-狐狸精.mp3","images":"img/a3.jpg"},
+{"id":"299","name":"罗志祥-恋爱达人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/罗志祥-恋爱达人.mp3","images":"img/a4.jpg"},
+{"id":"300","name":"吕方-老情歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/吕方-老情歌.mp3","images":"img/a5.jpg"},
+{"id":"301","name":"马天宇-该死的温柔","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/马天宇-该死的温柔.mp3","images":"img/a1.jpg"},
+{"id":"302","name":"马旭东-入戏太深","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/马旭东-入戏太深.mp3","images":"img/a2.jpg"},
+{"id":"303","name":"马郁-下辈子如果我还记得你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/马郁-下辈子如果我还记得你.mp3","images":"img/a3.jpg"},
+{"id":"304","name":"马郁-一天死去一点","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/马郁-一天死去一点.mp3","images":"img/a4.jpg"},
+{"id":"305","name":"满文军-懂你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/满文军-懂你.mp3","images":"img/a5.jpg"},
+{"id":"306","name":"满文军-望乡","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/满文军-望乡.mp3","images":"img/a1.jpg"},
+{"id":"307","name":"毛不易-消愁","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/毛不易-消愁.mp3","images":"img/a2.jpg"},
+{"id":"308","name":"毛宁-蓝蓝的夜蓝蓝的梦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/毛宁-蓝蓝的夜蓝蓝的梦.mp3","images":"img/a3.jpg"},
+{"id":"309","name":"毛宁-涛声依旧","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/毛宁-涛声依旧.mp3","images":"img/a4.jpg"},
+{"id":"310","name":"梅艳芳-女人花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/梅艳芳-女人花.mp3","images":"img/a5.jpg"},
+{"id":"311","name":"萌萌哒天团-帝都","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萌萌哒天团-帝都.mp3","images":"img/a1.jpg"},
+{"id":"312","name":"孟庭苇-冬季到台北来看雨","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孟庭苇-冬季到台北来看雨.mp3","images":"img/a2.jpg"},
+{"id":"313","name":"孟庭苇-风中有朵雨做的云","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孟庭苇-风中有朵雨做的云.mp3","images":"img/a3.jpg"},
+{"id":"314","name":"孟庭苇-谁的眼泪在飞","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孟庭苇-谁的眼泪在飞.mp3","images":"img/a4.jpg"},
+{"id":"315","name":"梦然-没有你陪伴真的好孤单","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/梦然-没有你陪伴真的好孤单.mp3","images":"img/a5.jpg"},
+{"id":"316","name":"梦然-少年","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/梦然-少年.mp3","images":"img/a1.jpg"},
+{"id":"317","name":"莫文蔚 张洪量-广岛之恋","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/莫文蔚 张洪量-广岛之恋.mp3","images":"img/a2.jpg"},
+{"id":"318","name":"莫文蔚-电台情歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/莫文蔚-电台情歌.mp3","images":"img/a3.jpg"},
+{"id":"319","name":"莫文蔚-寂寞的恋人啊","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/莫文蔚-寂寞的恋人啊.mp3","images":"img/a4.jpg"},
+{"id":"320","name":"莫文蔚-盛夏的果实","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/莫文蔚-盛夏的果实.mp3","images":"img/a5.jpg"},
+{"id":"321","name":"莫文蔚-他不爱我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/莫文蔚-他不爱我.mp3","images":"img/a1.jpg"},
+{"id":"322","name":"莫文蔚-阴天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/莫文蔚-阴天.mp3","images":"img/a2.jpg"},
+{"id":"323","name":"慕容晓晓-爱情买卖","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/慕容晓晓-爱情买卖.mp3","images":"img/a3.jpg"},
+{"id":"324","name":"欧得洋-孤单北半球","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/欧得洋-孤单北半球.mp3","images":"img/a4.jpg"},
+{"id":"325","name":"潘安邦-外婆的澎湖湾","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/潘安邦-外婆的澎湖湾.mp3","images":"img/a5.jpg"},
+{"id":"326","name":"潘美辰-我想有个家","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/潘美辰-我想有个家.mp3","images":"img/a1.jpg"},
+{"id":"327","name":"潘玮柏、苏芮-我想更懂你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/潘玮柏、苏芮-我想更懂你.mp3","images":"img/a2.jpg"},
+{"id":"328","name":"潘玮柏-不得不爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/潘玮柏-不得不爱.mp3","images":"img/a3.jpg"},
+{"id":"329","name":"潘玮柏-快乐崇拜","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/潘玮柏-快乐崇拜.mp3","images":"img/a4.jpg"},
+{"id":"330","name":"潘越云-天天天蓝","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/潘越云-天天天蓝.mp3","images":"img/a5.jpg"},
+{"id":"331","name":"潘越云-我是不是你最疼爱的人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/潘越云-我是不是你最疼爱的人.mp3","images":"img/a1.jpg"},
+{"id":"332","name":"庞龙-两只蝴蝶","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庞龙-两只蝴蝶.mp3","images":"img/a2.jpg"},
+{"id":"333","name":"庞龙-你是我的玫瑰花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庞龙-你是我的玫瑰花.mp3","images":"img/a3.jpg"},
+{"id":"334","name":"彭佳慧-好久不见","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/彭佳慧-好久不见.mp3","images":"img/a4.jpg"},
+{"id":"335","name":"彭佳慧-相见恨晚","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/彭佳慧-相见恨晚.mp3","images":"img/a5.jpg"},
+{"id":"336","name":"朴树-白桦林","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/朴树-白桦林.mp3","images":"img/a1.jpg"},
+{"id":"337","name":"朴树-那些花儿","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/朴树-那些花儿.mp3","images":"img/a2.jpg"},
+{"id":"338","name":"戚薇、杨宗纬-为了遇见你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/戚薇、杨宗纬-为了遇见你.mp3","images":"img/a3.jpg"},
+{"id":"339","name":"齐秦-不让我的眼泪陪我过夜","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/齐秦-不让我的眼泪陪我过夜.mp3","images":"img/a4.jpg"},
+{"id":"340","name":"齐秦-大约在冬季","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/齐秦-大约在冬季.mp3","images":"img/a5.jpg"},
+{"id":"341","name":"齐秦-往事随风","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/齐秦-往事随风.mp3","images":"img/a1.jpg"},
+{"id":"342","name":"齐秦-无情的雨无情的你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/齐秦-无情的雨无情的你.mp3","images":"img/a2.jpg"},
+{"id":"343","name":"齐豫-橄榄树","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/齐豫-橄榄树.mp3","images":"img/a3.jpg"},
+{"id":"344","name":"祁隆、乐凡-等你等了那么久","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/祁隆、乐凡-等你等了那么久.mp3","images":"img/a4.jpg"},
+{"id":"345","name":"邱永传-十一年","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邱永传-十一年.mp3","images":"img/a5.jpg"},
+{"id":"346","name":"裘海正-爱我的人和我爱的人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/裘海正-爱我的人和我爱的人.mp3","images":"img/a1.jpg"},
+{"id":"347","name":"裘海正-九千九百九十九滴眼泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/裘海正-九千九百九十九滴眼泪.mp3","images":"img/a2.jpg"},
+{"id":"348","name":"曲婉婷-我的歌声里","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/曲婉婷-我的歌声里.mp3","images":"img/a3.jpg"},
+{"id":"349","name":"任妙音-风筝","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/任妙音-风筝.mp3","images":"img/a4.jpg"},
+{"id":"350","name":"任贤齐-沧海一声笑","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/任贤齐-沧海一声笑.mp3","images":"img/a5.jpg"},
+{"id":"351","name":"任贤齐-流着泪的你的脸","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/任贤齐-流着泪的你的脸.mp3","images":"img/a1.jpg"},
+{"id":"352","name":"任贤齐-伤心太平洋","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/任贤齐-伤心太平洋.mp3","images":"img/a2.jpg"},
+{"id":"353","name":"任贤齐-我是一只鱼","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/任贤齐-我是一只鱼.mp3","images":"img/a3.jpg"},
+{"id":"354","name":"任贤齐-小雪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/任贤齐-小雪.mp3","images":"img/a4.jpg"},
+{"id":"355","name":"任贤齐-心太软","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/任贤齐-心太软.mp3","images":"img/a5.jpg"},
+{"id":"356","name":"容祖儿-挥着翅膀的女孩","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/容祖儿-挥着翅膀的女孩.mp3","images":"img/a1.jpg"},
+{"id":"357","name":"沙宝亮-暗香","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/沙宝亮-暗香.mp3","images":"img/a2.jpg"},
+{"id":"358","name":"沙宝亮-斑马斑马","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/沙宝亮-斑马斑马.mp3","images":"img/a3.jpg"},
+{"id":"359","name":"斯琴高丽-犯错","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/斯琴高丽-犯错.mp3","images":"img/a4.jpg"},
+{"id":"360","name":"苏芮-牵手","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/苏芮-牵手.mp3","images":"img/a5.jpg"},
+{"id":"361","name":"苏永康-爱一个人好难","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/苏永康-爱一个人好难.mp3","images":"img/a1.jpg"},
+{"id":"362","name":"苏永康-男人不该让女人流泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/苏永康-男人不该让女人流泪.mp3","images":"img/a2.jpg"},
+{"id":"363","name":"苏运莹-野子","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/苏运莹-野子.mp3","images":"img/a3.jpg"},
+{"id":"364","name":"孙国庆-代价","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙国庆-代价.mp3","images":"img/a4.jpg"},
+{"id":"365","name":"孙国庆-上上签","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙国庆-上上签.mp3","images":"img/a5.jpg"},
+{"id":"366","name":"孙楠、韩红-美丽的神话","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙楠、韩红-美丽的神话.mp3","images":"img/a1.jpg"},
+{"id":"367","name":"孙楠-IBelieve","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙楠-IBelieve.mp3","images":"img/a2.jpg"},
+{"id":"368","name":"孙楠-你快回来","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙楠-你快回来.mp3","images":"img/a3.jpg"},
+{"id":"369","name":"孙楠-缘分的天空","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙楠-缘分的天空.mp3","images":"img/a4.jpg"},
+{"id":"370","name":"孙楠-拯救","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙楠-拯救.mp3","images":"img/a5.jpg"},
+{"id":"371","name":"孙燕姿-风筝","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙燕姿-风筝.mp3","images":"img/a1.jpg"},
+{"id":"372","name":"孙燕姿-坏天气","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙燕姿-坏天气.mp3","images":"img/a2.jpg"},
+{"id":"373","name":"孙燕姿-开始懂了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙燕姿-开始懂了.mp3","images":"img/a3.jpg"},
+{"id":"374","name":"孙燕姿-绿光","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙燕姿-绿光.mp3","images":"img/a4.jpg"},
+{"id":"375","name":"孙燕姿-天黑黑","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙燕姿-天黑黑.mp3","images":"img/a5.jpg"},
+{"id":"376","name":"孙燕姿-我要的幸福","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙燕姿-我要的幸福.mp3","images":"img/a1.jpg"},
+{"id":"377","name":"孙燕姿-遇见","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙燕姿-遇见.mp3","images":"img/a2.jpg"},
+{"id":"378","name":"孙燕姿-原来你什么都不要","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙燕姿-原来你什么都不要.mp3","images":"img/a3.jpg"},
+{"id":"379","name":"孙悦-快乐指南","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙悦-快乐指南.mp3","images":"img/a4.jpg"},
+{"id":"380","name":"孙悦-心情不错","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙悦-心情不错.mp3","images":"img/a5.jpg"},
+{"id":"381","name":"孙悦-幸福快车","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙悦-幸福快车.mp3","images":"img/a1.jpg"},
+{"id":"382","name":"孙悦-祝你平安","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/孙悦-祝你平安.mp3","images":"img/a2.jpg"},
+{"id":"383","name":"邰正宵、孙悦-好人好梦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邰正宵、孙悦-好人好梦.mp3","images":"img/a3.jpg"},
+{"id":"384","name":"邰正宵-九百九十九朵玫瑰","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邰正宵-九百九十九朵玫瑰.mp3","images":"img/a4.jpg"},
+{"id":"385","name":"邰正宵-千纸鹤","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邰正宵-千纸鹤.mp3","images":"img/a5.jpg"},
+{"id":"386","name":"邰正宵-心要让你听见","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邰正宵-心要让你听见.mp3","images":"img/a1.jpg"},
+{"id":"387","name":"邰正宵-一千零一夜","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邰正宵-一千零一夜.mp3","images":"img/a2.jpg"},
+{"id":"388","name":"邰正宵-找一个字代替","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/邰正宵-找一个字代替.mp3","images":"img/a3.jpg"},
+{"id":"389","name":"谭咏麟-爱在深秋","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谭咏麟-爱在深秋.mp3","images":"img/a4.jpg"},
+{"id":"390","name":"谭咏麟-再见亦是泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谭咏麟-再见亦是泪.mp3","images":"img/a5.jpg"},
+{"id":"391","name":"汤潮-狼爱上羊","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汤潮-狼爱上羊.mp3","images":"img/a1.jpg"},
+{"id":"392","name":"汤潮-美了美了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汤潮-美了美了.mp3","images":"img/a2.jpg"},
+{"id":"393","name":"唐磊-丁香花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/唐磊-丁香花.mp3","images":"img/a3.jpg"},
+{"id":"394","name":"陶晶莹-太委屈","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陶晶莹-太委屈.mp3","images":"img/a4.jpg"},
+{"id":"395","name":"陶喆-melody","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陶喆-melody.mp3","images":"img/a5.jpg"},
+{"id":"396","name":"陶喆-爱我还是他","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陶喆-爱我还是他.mp3","images":"img/a1.jpg"},
+{"id":"397","name":"陶喆-小镇姑娘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/陶喆-小镇姑娘.mp3","images":"img/a2.jpg"},
+{"id":"398","name":"腾格尔-天堂","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/腾格尔-天堂.mp3","images":"img/a3.jpg"},
+{"id":"399","name":"田馥甄-寂寞寂寞就好","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/田馥甄-寂寞寂寞就好.mp3","images":"img/a4.jpg"},
+{"id":"400","name":"田馥甄-小幸运","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/田馥甄-小幸运.mp3","images":"img/a5.jpg"},
+{"id":"401","name":"童安格-明天你是否依然爱我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/童安格-明天你是否依然爱我.mp3","images":"img/a1.jpg"},
+{"id":"402","name":"屠洪刚-精忠报国","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/屠洪刚-精忠报国.mp3","images":"img/a2.jpg"},
+{"id":"403","name":"汪峰-春天里","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪峰-春天里.mp3","images":"img/a3.jpg"},
+{"id":"404","name":"汪峰-飞得更高","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪峰-飞得更高.mp3","images":"img/a4.jpg"},
+{"id":"405","name":"汪峰-怒放的生命","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪峰-怒放的生命.mp3","images":"img/a5.jpg"},
+{"id":"406","name":"汪峰-无处安放","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪峰-无处安放.mp3","images":"img/a1.jpg"},
+{"id":"407","name":"汪峰-一起摇摆","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪峰-一起摇摆.mp3","images":"img/a2.jpg"},
+{"id":"408","name":"汪明荃-万水千山总是情","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪明荃-万水千山总是情.mp3","images":"img/a3.jpg"},
+{"id":"409","name":"汪苏泷-不分手的恋爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪苏泷-不分手的恋爱.mp3","images":"img/a4.jpg"},
+{"id":"410","name":"汪正正-超越梦想","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪正正-超越梦想.mp3","images":"img/a5.jpg"},
+{"id":"411","name":"汪正正-重头再来","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/汪正正-重头再来.mp3","images":"img/a1.jpg"},
+{"id":"412","name":"王菲-传奇","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王菲-传奇.mp3","images":"img/a2.jpg"},
+{"id":"413","name":"王菲-容易受伤的女人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王菲-容易受伤的女人.mp3","images":"img/a3.jpg"},
+{"id":"414","name":"王菲-笑忘书","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王菲-笑忘书.mp3","images":"img/a4.jpg"},
+{"id":"415","name":"王杰-你是我胸口永远的痛","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王杰-你是我胸口永远的痛.mp3","images":"img/a5.jpg"},
+{"id":"416","name":"王杰-伤心1999","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王杰-伤心1999.mp3","images":"img/a1.jpg"},
+{"id":"417","name":"王杰-忘记你不如忘记自己","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王杰-忘记你不如忘记自己.mp3","images":"img/a2.jpg"},
+{"id":"418","name":"王杰-忘了你忘了我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王杰-忘了你忘了我.mp3","images":"img/a3.jpg"},
+{"id":"419","name":"王杰-为了爱梦一生","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王杰-为了爱梦一生.mp3","images":"img/a4.jpg"},
+{"id":"420","name":"王杰-一场游戏一场梦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王杰-一场游戏一场梦.mp3","images":"img/a5.jpg"},
+{"id":"421","name":"王杰-一无所有","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王杰-一无所有.mp3","images":"img/a1.jpg"},
+{"id":"422","name":"王杰-英雄泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王杰-英雄泪.mp3","images":"img/a2.jpg"},
+{"id":"423","name":"王力宏 selina-你是我心内的一首歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王力宏 selina-你是我心内的一首歌.mp3","images":"img/a3.jpg"},
+{"id":"424","name":"王力宏-爱的就是你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王力宏-爱的就是你.mp3","images":"img/a4.jpg"},
+{"id":"425","name":"王力宏-唯一","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王力宏-唯一.mp3","images":"img/a5.jpg"},
+{"id":"426","name":"王麟、完玛三智-唐古拉","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王麟、完玛三智-唐古拉.mp3","images":"img/a1.jpg"},
+{"id":"427","name":"王麟-QQ爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王麟-QQ爱.mp3","images":"img/a2.jpg"},
+{"id":"428","name":"王麟-伤不起","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王麟-伤不起.mp3","images":"img/a3.jpg"},
+{"id":"429","name":"王强-你把爱情给了谁","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王强-你把爱情给了谁.mp3","images":"img/a4.jpg"},
+{"id":"430","name":"王蓉-哎呀","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王蓉-哎呀.mp3","images":"img/a5.jpg"},
+{"id":"431","name":"王心凌-honey","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王心凌-honey.mp3","images":"img/a1.jpg"},
+{"id":"432","name":"王心凌-爱你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王心凌-爱你.mp3","images":"img/a2.jpg"},
+{"id":"433","name":"王心凌-不哭","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王心凌-不哭.mp3","images":"img/a3.jpg"},
+{"id":"434","name":"王心凌-心心相印","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王心凌-心心相印.mp3","images":"img/a4.jpg"},
+{"id":"435","name":"王馨平-别问我是谁","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王馨平-别问我是谁.mp3","images":"img/a5.jpg"},
+{"id":"436","name":"王娅-爱情错觉","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王娅-爱情错觉.mp3","images":"img/a1.jpg"},
+{"id":"437","name":"王铮亮-时间都去哪儿了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/王铮亮-时间都去哪儿了.mp3","images":"img/a2.jpg"},
+{"id":"438","name":"乌兰托娅-火红的萨日朗","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/乌兰托娅-火红的萨日朗.mp3","images":"img/a3.jpg"},
+{"id":"439","name":"乌兰托娅-套马杆","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/乌兰托娅-套马杆.mp3","images":"img/a4.jpg"},
+{"id":"440","name":"巫启贤-红尘来去一场梦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/巫启贤-红尘来去一场梦.mp3","images":"img/a5.jpg"},
+{"id":"441","name":"吴克群-为你写诗","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/吴克群-为你写诗.mp3","images":"img/a1.jpg"},
+{"id":"442","name":"吴奇隆-烟火","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/吴奇隆-烟火.mp3","images":"img/a2.jpg"},
+{"id":"443","name":"五月天-你不是真正的快乐","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/五月天-你不是真正的快乐.mp3","images":"img/a3.jpg"},
+{"id":"444","name":"五月天-突然好想你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/五月天-突然好想你.mp3","images":"img/a4.jpg"},
+{"id":"445","name":"伍佰-挪威的森林","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/伍佰-挪威的森林.mp3","images":"img/a5.jpg"},
+{"id":"446","name":"伍佰-突然的自我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/伍佰-突然的自我.mp3","images":"img/a1.jpg"},
+{"id":"447","name":"伍思凯-特别的爱给特别的你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/伍思凯-特别的爱给特别的你.mp3","images":"img/a2.jpg"},
+{"id":"448","name":"希莉娜依、胡兵-归去来","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/希莉娜依、胡兵-归去来.mp3","images":"img/a3.jpg"},
+{"id":"449","name":"萧亚轩、韩庚-最佳听众","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萧亚轩、韩庚-最佳听众.mp3","images":"img/a4.jpg"},
+{"id":"450","name":"萧亚轩-Cappuccino","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萧亚轩-Cappuccino.mp3","images":"img/a5.jpg"},
+{"id":"451","name":"萧亚轩-HoneyHoneyHoney","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萧亚轩-HoneyHoneyHoney.mp3","images":"img/a1.jpg"},
+{"id":"452","name":"萧亚轩-窗外的天气","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萧亚轩-窗外的天气.mp3","images":"img/a2.jpg"},
+{"id":"453","name":"萧亚轩-突然想起你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萧亚轩-突然想起你.mp3","images":"img/a3.jpg"},
+{"id":"454","name":"萧亚轩-我爱你那么多","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萧亚轩-我爱你那么多.mp3","images":"img/a4.jpg"},
+{"id":"455","name":"萧亚轩-一个人的精彩","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萧亚轩-一个人的精彩.mp3","images":"img/a5.jpg"},
+{"id":"456","name":"萧亚轩-最熟悉的陌生人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/萧亚轩-最熟悉的陌生人.mp3","images":"img/a1.jpg"},
+{"id":"457","name":"小虎队-爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/小虎队-爱.mp3","images":"img/a2.jpg"},
+{"id":"458","name":"小虎队-青苹果乐园","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/小虎队-青苹果乐园.mp3","images":"img/a3.jpg"},
+{"id":"459","name":"小虎队-十七岁的雨季","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/小虎队-十七岁的雨季.mp3","images":"img/a4.jpg"},
+{"id":"460","name":"小潘潘、小峰峰-学猫叫","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/小潘潘、小峰峰-学猫叫.mp3","images":"img/a5.jpg"},
+{"id":"461","name":"谢东-笑脸","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谢东-笑脸.mp3","images":"img/a1.jpg"},
+{"id":"462","name":"谢军-心在跳情在烧","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谢军-心在跳情在烧.mp3","images":"img/a2.jpg"},
+{"id":"463","name":"谢娜-菠萝菠萝蜜","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谢娜-菠萝菠萝蜜.mp3","images":"img/a3.jpg"},
+{"id":"464","name":"谢霆锋-谢谢你的爱1999","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谢霆锋-谢谢你的爱1999.mp3","images":"img/a4.jpg"},
+{"id":"465","name":"谢霆锋-因为爱所以爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谢霆锋-因为爱所以爱.mp3","images":"img/a5.jpg"},
+{"id":"466","name":"谢雨欣-步步高","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谢雨欣-步步高.mp3","images":"img/a1.jpg"},
+{"id":"467","name":"谢雨欣-第三天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谢雨欣-第三天.mp3","images":"img/a2.jpg"},
+{"id":"468","name":"谢雨欣-天仙子","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/谢雨欣-天仙子.mp3","images":"img/a3.jpg"},
+{"id":"469","name":"辛晓琪-味道","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/辛晓琪-味道.mp3","images":"img/a4.jpg"},
+{"id":"470","name":"信乐团-海阔天空","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/信乐团-海阔天空.mp3","images":"img/a5.jpg"},
+{"id":"471","name":"信乐团-假如","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/信乐团-假如.mp3","images":"img/a1.jpg"},
+{"id":"472","name":"信乐团-离歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/信乐团-离歌.mp3","images":"img/a2.jpg"},
+{"id":"473","name":"信乐团-死了都要爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/信乐团-死了都要爱.mp3","images":"img/a3.jpg"},
+{"id":"474","name":"熊天平-火柴天堂","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/熊天平-火柴天堂.mp3","images":"img/a4.jpg"},
+{"id":"475","name":"徐怀钰-叮咚","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/徐怀钰-叮咚.mp3","images":"img/a5.jpg"},
+{"id":"476","name":"徐怀钰-分飞","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/徐怀钰-分飞.mp3","images":"img/a1.jpg"},
+{"id":"477","name":"徐怀钰-踏浪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/徐怀钰-踏浪.mp3","images":"img/a2.jpg"},
+{"id":"478","name":"徐良-那时雨","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/徐良-那时雨.mp3","images":"img/a3.jpg"},
+{"id":"479","name":"徐千雅-彩云之南","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/徐千雅-彩云之南.mp3","images":"img/a4.jpg"},
+{"id":"480","name":"徐誉滕-等一分钟 -","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/徐誉滕-等一分钟 -.mp3","images":"img/a5.jpg"},
+{"id":"481","name":"许慧欣-七月七日晴","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许慧欣-七月七日晴.mp3","images":"img/a1.jpg"},
+{"id":"482","name":"许佳慧-预谋","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许佳慧-预谋.mp3","images":"img/a2.jpg"},
+{"id":"483","name":"许美静-城里的月光","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-城里的月光.mp3","images":"img/a3.jpg"},
+{"id":"484","name":"许美静-荡漾","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-荡漾.mp3","images":"img/a4.jpg"},
+{"id":"485","name":"许美静-都是夜归人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-都是夜归人.mp3","images":"img/a5.jpg"},
+{"id":"486","name":"许美静-快乐无罪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-快乐无罪.mp3","images":"img/a1.jpg"},
+{"id":"487","name":"许美静-蔓延","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-蔓延.mp3","images":"img/a2.jpg"},
+{"id":"488","name":"许美静-迷乱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-迷乱.mp3","images":"img/a3.jpg"},
+{"id":"489","name":"许美静-迫在眉梢","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-迫在眉梢.mp3","images":"img/a4.jpg"},
+{"id":"490","name":"许美静-铁窗","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-铁窗.mp3","images":"img/a5.jpg"},
+{"id":"491","name":"许美静-阳光总在风雨后","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-阳光总在风雨后.mp3","images":"img/a1.jpg"},
+{"id":"492","name":"许美静-遗憾","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许美静-遗憾.mp3","images":"img/a2.jpg"},
+{"id":"493","name":"许茹芸-独角戏","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许茹芸-独角戏.mp3","images":"img/a3.jpg"},
+{"id":"494","name":"许茹芸-泪海","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许茹芸-泪海.mp3","images":"img/a4.jpg"},
+{"id":"495","name":"许茹芸-日光机场","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许茹芸-日光机场.mp3","images":"img/a5.jpg"},
+{"id":"496","name":"许茹芸-如果云知道","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许茹芸-如果云知道.mp3","images":"img/a1.jpg"},
+{"id":"497","name":"许茹芸-我依然爱你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许茹芸-我依然爱你.mp3","images":"img/a2.jpg"},
+{"id":"498","name":"许茹芸-一直是晴天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许茹芸-一直是晴天.mp3","images":"img/a3.jpg"},
+{"id":"499","name":"许韶洋-花香","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许韶洋-花香.mp3","images":"img/a4.jpg"},
+{"id":"500","name":"许韶洋-幸福的瞬间","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许韶洋-幸福的瞬间.mp3","images":"img/a5.jpg"},
+{"id":"501","name":"许嵩-半城烟沙","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许嵩-半城烟沙.mp3","images":"img/a1.jpg"},
+{"id":"502","name":"许嵩-断桥残雪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许嵩-断桥残雪.mp3","images":"img/a2.jpg"},
+{"id":"503","name":"许巍-曾经的你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/许巍-曾经的你.mp3","images":"img/a3.jpg"},
+{"id":"504","name":"薛之谦-暧昧","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/薛之谦-暧昧.mp3","images":"img/a4.jpg"},
+{"id":"505","name":"薛之谦-丑八怪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/薛之谦-丑八怪.mp3","images":"img/a5.jpg"},
+{"id":"506","name":"薛之谦-你还要我怎样","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/薛之谦-你还要我怎样.mp3","images":"img/a1.jpg"},
+{"id":"507","name":"薛之谦-演员","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/薛之谦-演员.mp3","images":"img/a2.jpg"},
+{"id":"508","name":"严艺丹-等你的季节","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/严艺丹-等你的季节.mp3","images":"img/a3.jpg"},
+{"id":"509","name":"严艺丹-三寸天堂","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/严艺丹-三寸天堂.mp3","images":"img/a4.jpg"},
+{"id":"510","name":"央金兰泽-遇上你是我的缘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/央金兰泽-遇上你是我的缘.mp3","images":"img/a5.jpg"},
+{"id":"511","name":"杨丞琳-暧昧","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨丞琳-暧昧.mp3","images":"img/a1.jpg"},
+{"id":"512","name":"杨丞琳-一千零一个愿望","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨丞琳-一千零一个愿望.mp3","images":"img/a2.jpg"},
+{"id":"513","name":"杨坤-那一天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨坤-那一天.mp3","images":"img/a3.jpg"},
+{"id":"514","name":"杨坤-无所谓","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨坤-无所谓.mp3","images":"img/a4.jpg"},
+{"id":"515","name":"杨幂-爱的供养","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨幂-爱的供养.mp3","images":"img/a5.jpg"},
+{"id":"516","name":"杨培安-爱上你是一个错","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨培安-爱上你是一个错.mp3","images":"img/a1.jpg"},
+{"id":"517","name":"杨培安-我相信","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨培安-我相信.mp3","images":"img/a2.jpg"},
+{"id":"518","name":"杨千桦-小城大事","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨千桦-小城大事.mp3","images":"img/a3.jpg"},
+{"id":"519","name":"杨小曼-我爱你胜过你爱我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨小曼-我爱你胜过你爱我.mp3","images":"img/a4.jpg"},
+{"id":"520","name":"杨钰莹、毛宁-心雨","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨钰莹、毛宁-心雨.mp3","images":"img/a5.jpg"},
+{"id":"521","name":"杨钰莹-轻轻的告诉你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨钰莹-轻轻的告诉你.mp3","images":"img/a1.jpg"},
+{"id":"522","name":"杨钰莹-我不想说","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨钰莹-我不想说.mp3","images":"img/a2.jpg"},
+{"id":"523","name":"杨宗纬 张碧晨-凉凉","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨宗纬 张碧晨-凉凉.mp3","images":"img/a3.jpg"},
+{"id":"524","name":"杨宗纬-洋葱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨宗纬-洋葱.mp3","images":"img/a4.jpg"},
+{"id":"525","name":"杨宗纬-一次就好","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/杨宗纬-一次就好.mp3","images":"img/a5.jpg"},
+{"id":"526","name":"叶蓓-想把我唱给你听","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/叶蓓-想把我唱给你听.mp3","images":"img/a1.jpg"},
+{"id":"527","name":"叶丽仪-上海滩","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/叶丽仪-上海滩.mp3","images":"img/a2.jpg"},
+{"id":"528","name":"叶倩文、林子祥-选择","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/叶倩文、林子祥-选择.mp3","images":"img/a3.jpg"},
+{"id":"529","name":"叶倩文-潇洒走一回","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/叶倩文-潇洒走一回.mp3","images":"img/a4.jpg"},
+{"id":"530","name":"游鸿明-下沙","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/游鸿明-下沙.mp3","images":"img/a5.jpg"},
+{"id":"531","name":"俞灏明 简美妍-陷入爱里面","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/俞灏明 简美妍-陷入爱里面.mp3","images":"img/a1.jpg"},
+{"id":"532","name":"宇桐非-感动天感动地","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/宇桐非-感动天感动地.mp3","images":"img/a2.jpg"},
+{"id":"533","name":"羽·泉-奔跑","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/羽·泉-奔跑.mp3","images":"img/a3.jpg"},
+{"id":"534","name":"羽·泉-彩虹","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/羽·泉-彩虹.mp3","images":"img/a4.jpg"},
+{"id":"535","name":"羽·泉-感觉不到你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/羽·泉-感觉不到你.mp3","images":"img/a5.jpg"},
+{"id":"536","name":"羽·泉-冷酷到底","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/羽·泉-冷酷到底.mp3","images":"img/a1.jpg"},
+{"id":"537","name":"羽·泉-深呼吸","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/羽·泉-深呼吸.mp3","images":"img/a2.jpg"},
+{"id":"538","name":"羽·泉-心似狂潮","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/羽·泉-心似狂潮.mp3","images":"img/a3.jpg"},
+{"id":"539","name":"羽·泉-最美","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/羽·泉-最美.mp3","images":"img/a4.jpg"},
+{"id":"540","name":"庾澄庆-情非得已","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庾澄庆-情非得已.mp3","images":"img/a5.jpg"},
+{"id":"541","name":"庾澄庆-让我一次爱个够","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庾澄庆-让我一次爱个够.mp3","images":"img/a1.jpg"},
+{"id":"542","name":"庾澄庆-热情的沙漠","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庾澄庆-热情的沙漠.mp3","images":"img/a2.jpg"},
+{"id":"543","name":"郁可唯-时间煮雨","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郁可唯-时间煮雨.mp3","images":"img/a3.jpg"},
+{"id":"544","name":"郁可唯-思慕","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郁可唯-思慕.mp3","images":"img/a4.jpg"},
+{"id":"545","name":"袁成杰、戚薇-想我了吗","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/袁成杰、戚薇-想我了吗.mp3","images":"img/a5.jpg"},
+{"id":"546","name":"袁娅维-说散就散","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/袁娅维-说散就散.mp3","images":"img/a1.jpg"},
+{"id":"547","name":"张柏芝-星语心愿","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张柏芝-星语心愿.mp3","images":"img/a2.jpg"},
+{"id":"548","name":"张碧晨-年轮","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张碧晨-年轮.mp3","images":"img/a3.jpg"},
+{"id":"549","name":"张栋梁-北极星的眼泪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张栋梁-北极星的眼泪.mp3","images":"img/a4.jpg"},
+{"id":"550","name":"张栋梁-当你孤单你会想起谁","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张栋梁-当你孤单你会想起谁.mp3","images":"img/a5.jpg"},
+{"id":"551","name":"张镐哲-好男人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张镐哲-好男人.mp3","images":"img/a1.jpg"},
+{"id":"552","name":"张国荣-倩女幽魂","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张国荣-倩女幽魂.mp3","images":"img/a2.jpg"},
+{"id":"553","name":"张含韵-闪亮亮","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张含韵-闪亮亮.mp3","images":"img/a3.jpg"},
+{"id":"554","name":"张含韵-酸酸甜甜就是我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张含韵-酸酸甜甜就是我.mp3","images":"img/a4.jpg"},
+{"id":"555","name":"张含韵-想唱就唱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张含韵-想唱就唱.mp3","images":"img/a5.jpg"},
+{"id":"556","name":"张惠妹-BadBoy","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-BadBoy.mp3","images":"img/a1.jpg"},
+{"id":"557","name":"张惠妹-剪爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-剪爱.mp3","images":"img/a2.jpg"},
+{"id":"558","name":"张惠妹-姐妹","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-姐妹.mp3","images":"img/a3.jpg"},
+{"id":"559","name":"张惠妹-可以抱你吗","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-可以抱你吗.mp3","images":"img/a4.jpg"},
+{"id":"560","name":"张惠妹-哭不出来","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-哭不出来.mp3","images":"img/a5.jpg"},
+{"id":"561","name":"张惠妹-听海","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-听海.mp3","images":"img/a1.jpg"},
+{"id":"562","name":"张惠妹-一想到你呀","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-一想到你呀.mp3","images":"img/a2.jpg"},
+{"id":"563","name":"张惠妹-原来你什么都不想要","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-原来你什么都不想要.mp3","images":"img/a3.jpg"},
+{"id":"564","name":"张惠妹-站在高岗上","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张惠妹-站在高岗上.mp3","images":"img/a4.jpg"},
+{"id":"565","name":"张杰-这,就是爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张杰-这,就是爱.mp3","images":"img/a5.jpg"},
+{"id":"566","name":"张敬轩-断点","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张敬轩-断点.mp3","images":"img/a1.jpg"},
+{"id":"567","name":"张靓颖-画心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张靓颖-画心.mp3","images":"img/a2.jpg"},
+{"id":"568","name":"张靓颖-如果这就是爱情","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张靓颖-如果这就是爱情.mp3","images":"img/a3.jpg"},
+{"id":"569","name":"张靓颖-终于等到你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张靓颖-终于等到你.mp3","images":"img/a4.jpg"},
+{"id":"570","name":"张明敏-龙的传人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张明敏-龙的传人.mp3","images":"img/a5.jpg"},
+{"id":"571","name":"张明敏-我的中国心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张明敏-我的中国心.mp3","images":"img/a1.jpg"},
+{"id":"572","name":"张娜拉-SweetDream韩文","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张娜拉-SweetDream韩文.mp3","images":"img/a2.jpg"},
+{"id":"573","name":"张娜拉-泪流满面","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张娜拉-泪流满面.mp3","images":"img/a3.jpg"},
+{"id":"574","name":"张韶涵-梦里花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张韶涵-梦里花.mp3","images":"img/a4.jpg"},
+{"id":"575","name":"张韶涵-呐喊","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张韶涵-呐喊.mp3","images":"img/a5.jpg"},
+{"id":"576","name":"张韶涵-欧若拉","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张韶涵-欧若拉.mp3","images":"img/a1.jpg"},
+{"id":"577","name":"张韶涵-潘朵拉","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张韶涵-潘朵拉.mp3","images":"img/a2.jpg"},
+{"id":"578","name":"张韶涵-隐形的翅膀","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张韶涵-隐形的翅膀.mp3","images":"img/a3.jpg"},
+{"id":"579","name":"张韶涵-寓言","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张韶涵-寓言.mp3","images":"img/a4.jpg"},
+{"id":"580","name":"张卫健-孤独不苦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张卫健-孤独不苦.mp3","images":"img/a5.jpg"},
+{"id":"581","name":"张卫健-你爱我像谁","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张卫健-你爱我像谁.mp3","images":"img/a1.jpg"},
+{"id":"582","name":"张卫健-虚虚实实","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张卫健-虚虚实实.mp3","images":"img/a2.jpg"},
+{"id":"583","name":"张卫健-一辈子一场梦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张卫健-一辈子一场梦.mp3","images":"img/a3.jpg"},
+{"id":"584","name":"张信哲、范文芳-别让情两难","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲、范文芳-别让情两难.mp3","images":"img/a4.jpg"},
+{"id":"585","name":"张信哲、刘嘉玲-有一点动心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲、刘嘉玲-有一点动心.mp3","images":"img/a5.jpg"},
+{"id":"586","name":"张信哲-爱不留","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-爱不留.mp3","images":"img/a1.jpg"},
+{"id":"587","name":"张信哲-爱就一个字","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-爱就一个字.mp3","images":"img/a2.jpg"},
+{"id":"588","name":"张信哲-爱如潮水","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-爱如潮水.mp3","images":"img/a3.jpg"},
+{"id":"589","name":"张信哲-别怕我伤心","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-别怕我伤心.mp3","images":"img/a4.jpg"},
+{"id":"590","name":"张信哲-不要对他说","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-不要对他说.mp3","images":"img/a5.jpg"},
+{"id":"591","name":"张信哲-从开始到现在","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-从开始到现在.mp3","images":"img/a1.jpg"},
+{"id":"592","name":"张信哲-过火","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-过火.mp3","images":"img/a2.jpg"},
+{"id":"593","name":"张信哲-宽容","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-宽容.mp3","images":"img/a3.jpg"},
+{"id":"594","name":"张信哲-某某某","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-某某某.mp3","images":"img/a4.jpg"},
+{"id":"595","name":"张信哲-难以抗拒你容颜","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-难以抗拒你容颜.mp3","images":"img/a5.jpg"},
+{"id":"596","name":"张信哲-太想爱你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-太想爱你.mp3","images":"img/a1.jpg"},
+{"id":"597","name":"张信哲-信仰","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-信仰.mp3","images":"img/a2.jpg"},
+{"id":"598","name":"张信哲-用情","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-用情.mp3","images":"img/a3.jpg"},
+{"id":"599","name":"张信哲-直觉","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张信哲-直觉.mp3","images":"img/a4.jpg"},
+{"id":"600","name":"张学友-当我想起你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-当我想起你.mp3","images":"img/a5.jpg"},
+{"id":"601","name":"张学友-饿狼传说","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-饿狼传说.mp3","images":"img/a1.jpg"},
+{"id":"602","name":"张学友-烦恼歌","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-烦恼歌.mp3","images":"img/a2.jpg"},
+{"id":"603","name":"张学友-分手总要在雨天","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-分手总要在雨天.mp3","images":"img/a3.jpg"},
+{"id":"604","name":"张学友-李香兰","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-李香兰.mp3","images":"img/a4.jpg"},
+{"id":"605","name":"张学友-你好毒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-你好毒.mp3","images":"img/a5.jpg"},
+{"id":"606","name":"张学友-情书","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-情书.mp3","images":"img/a1.jpg"},
+{"id":"607","name":"张学友-秋意浓","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-秋意浓.mp3","images":"img/a2.jpg"},
+{"id":"608","name":"张学友-吻别","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-吻别.mp3","images":"img/a3.jpg"},
+{"id":"609","name":"张学友-我等到花儿也谢了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-我等到花儿也谢了.mp3","images":"img/a4.jpg"},
+{"id":"610","name":"张学友-心如刀割","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-心如刀割.mp3","images":"img/a5.jpg"},
+{"id":"611","name":"张学友-一路上有你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-一路上有你.mp3","images":"img/a1.jpg"},
+{"id":"612","name":"张学友-一千个伤心的理由","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-一千个伤心的理由.mp3","images":"img/a2.jpg"},
+{"id":"613","name":"张学友-只想一生跟你走","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-只想一生跟你走.mp3","images":"img/a3.jpg"},
+{"id":"614","name":"张学友-只愿一生爱一人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张学友-只愿一生爱一人.mp3","images":"img/a4.jpg"},
+{"id":"615","name":"张宇-一言难尽","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张宇-一言难尽.mp3","images":"img/a5.jpg"},
+{"id":"616","name":"张宇-雨一直下","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张宇-雨一直下.mp3","images":"img/a1.jpg"},
+{"id":"617","name":"张雨生-大海","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张雨生-大海.mp3","images":"img/a2.jpg"},
+{"id":"618","name":"张雨生-我的未来不是梦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张雨生-我的未来不是梦.mp3","images":"img/a3.jpg"},
+{"id":"619","name":"张雨生-一天到晚游泳的鱼","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张雨生-一天到晚游泳的鱼.mp3","images":"img/a4.jpg"},
+{"id":"620","name":"张云雷-探清水河","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张云雷-探清水河.mp3","images":"img/a5.jpg"},
+{"id":"621","name":"张芸京-春泥","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张芸京-春泥.mp3","images":"img/a1.jpg"},
+{"id":"622","name":"张芸京-偏爱","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/张芸京-偏爱.mp3","images":"img/a2.jpg"},
+{"id":"623","name":"赵传-我很丑可是我很温柔","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵传-我很丑可是我很温柔.mp3","images":"img/a3.jpg"},
+{"id":"624","name":"赵传-我是一只小小鸟","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵传-我是一只小小鸟.mp3","images":"img/a4.jpg"},
+{"id":"625","name":"赵方婧-芒种","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵方婧-芒种.mp3","images":"img/a5.jpg"},
+{"id":"626","name":"赵雷-成都","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵雷-成都.mp3","images":"img/a1.jpg"},
+{"id":"627","name":"赵薇-爱情大魔咒","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵薇-爱情大魔咒.mp3","images":"img/a2.jpg"},
+{"id":"628","name":"赵薇-好想好想","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵薇-好想好想.mp3","images":"img/a3.jpg"},
+{"id":"629","name":"赵薇-情深深雨濛濛","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵薇-情深深雨濛濛.mp3","images":"img/a4.jpg"},
+{"id":"630","name":"赵英俊-大王叫我来巡山","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵英俊-大王叫我来巡山.mp3","images":"img/a5.jpg"},
+{"id":"631","name":"赵咏华-最浪漫的事","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/赵咏华-最浪漫的事.mp3","images":"img/a1.jpg"},
+{"id":"632","name":"甄妮-鲁冰花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/甄妮-鲁冰花.mp3","images":"img/a2.jpg"},
+{"id":"633","name":"甄妮-我曾用心爱着你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/甄妮-我曾用心爱着你.mp3","images":"img/a3.jpg"},
+{"id":"634","name":"郑钧-灰姑娘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郑钧-灰姑娘.mp3","images":"img/a4.jpg"},
+{"id":"635","name":"郑钧-回到拉萨","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郑钧-回到拉萨.mp3","images":"img/a5.jpg"},
+{"id":"636","name":"郑源-包容","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郑源-包容.mp3","images":"img/a1.jpg"},
+{"id":"637","name":"郑源-寒江雪","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郑源-寒江雪.mp3","images":"img/a2.jpg"},
+{"id":"638","name":"郑源-怎么会狠心伤害我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/郑源-怎么会狠心伤害我.mp3","images":"img/a3.jpg"},
+{"id":"639","name":"钟镇涛-只要你过得比我好","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/钟镇涛-只要你过得比我好.mp3","images":"img/a4.jpg"},
+{"id":"640","name":"周冰倩-真的好想你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周冰倩-真的好想你.mp3","images":"img/a5.jpg"},
+{"id":"641","name":"周传雄-黄昏","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周传雄-黄昏.mp3","images":"img/a1.jpg"},
+{"id":"642","name":"周华健-刀剑如梦","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周华健-刀剑如梦.mp3","images":"img/a2.jpg"},
+{"id":"643","name":"周华健-风雨无阻","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周华健-风雨无阻.mp3","images":"img/a3.jpg"},
+{"id":"644","name":"周华健-覆水难收","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周华健-覆水难收.mp3","images":"img/a4.jpg"},
+{"id":"645","name":"周华健-难念的经","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周华健-难念的经.mp3","images":"img/a5.jpg"},
+{"id":"646","name":"周华健-朋友","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周华健-朋友.mp3","images":"img/a1.jpg"},
+{"id":"647","name":"周蕙-不想让你知道","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周蕙-不想让你知道.mp3","images":"img/a2.jpg"},
+{"id":"648","name":"周蕙-风铃","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周蕙-风铃.mp3","images":"img/a3.jpg"},
+{"id":"649","name":"周蕙-好想好好爱你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周蕙-好想好好爱你.mp3","images":"img/a4.jpg"},
+{"id":"650","name":"周蕙-没有你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周蕙-没有你.mp3","images":"img/a5.jpg"},
+{"id":"651","name":"周蕙-我看","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周蕙-我看.mp3","images":"img/a1.jpg"},
+{"id":"652","name":"周蕙-相遇太早","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周蕙-相遇太早.mp3","images":"img/a2.jpg"},
+{"id":"653","name":"周蕙-约定","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周蕙-约定.mp3","images":"img/a3.jpg"},
+{"id":"654","name":"周杰伦、费玉清-千里之外","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦、费玉清-千里之外.mp3","images":"img/a4.jpg"},
+{"id":"655","name":"周杰伦、温岚-屋顶","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦、温岚-屋顶.mp3","images":"img/a5.jpg"},
+{"id":"656","name":"周杰伦-稻香","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦-稻香.mp3","images":"img/a1.jpg"},
+{"id":"657","name":"周杰伦-东风破","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦-东风破.mp3","images":"img/a2.jpg"},
+{"id":"658","name":"周杰伦-告白气球","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦-告白气球.mp3","images":"img/a3.jpg"},
+{"id":"659","name":"周杰伦-菊花台","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦-菊花台.mp3","images":"img/a4.jpg"},
+{"id":"660","name":"周杰伦-龙卷风","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦-龙卷风.mp3","images":"img/a5.jpg"},
+{"id":"661","name":"周杰伦-七里香","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦-七里香.mp3","images":"img/a1.jpg"},
+{"id":"662","name":"周杰伦-青花瓷","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周杰伦-青花瓷.mp3","images":"img/a2.jpg"},
+{"id":"663","name":"周深、胡夏-天涯尽处","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深、胡夏-天涯尽处.mp3","images":"img/a3.jpg"},
+{"id":"664","name":"周深、郎朗-幽灵公主(Live)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深、郎朗-幽灵公主(Live).mp3","images":"img/a4.jpg"},
+{"id":"665","name":"周深、李琦-你要的爱(Live)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深、李琦-你要的爱(Live).mp3","images":"img/a5.jpg"},
+{"id":"666","name":"周深、李维-偶然","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深、李维-偶然.mp3","images":"img/a1.jpg"},
+{"id":"667","name":"周深、陆虎-缘落","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深、陆虎-缘落.mp3","images":"img/a2.jpg"},
+{"id":"668","name":"周深、于文文-暗香(Live)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深、于文文-暗香(Live).mp3","images":"img/a3.jpg"},
+{"id":"669","name":"周深-LetItGo(九语男版)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-LetItGo(九语男版).mp3","images":"img/a4.jpg"},
+{"id":"670","name":"周深-白墙","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-白墙.mp3","images":"img/a5.jpg"},
+{"id":"671","name":"周深-不说话","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-不说话.mp3","images":"img/a1.jpg"},
+{"id":"672","name":"周深-曾经沧海","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-曾经沧海.mp3","images":"img/a2.jpg"},
+{"id":"673","name":"周深-触不可及","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-触不可及.mp3","images":"img/a3.jpg"},
+{"id":"674","name":"周深-此生惟你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-此生惟你.mp3","images":"img/a4.jpg"},
+{"id":"675","name":"周深-达拉崩吧(Live)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-达拉崩吧(Live).mp3","images":"img/a5.jpg"},
+{"id":"676","name":"周深-大鱼","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-大鱼.mp3","images":"img/a1.jpg"},
+{"id":"677","name":"周深-胆小鬼","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-胆小鬼.mp3","images":"img/a2.jpg"},
+{"id":"678","name":"周深-等着我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-等着我.mp3","images":"img/a3.jpg"},
+{"id":"679","name":"周深-东游","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-东游.mp3","images":"img/a4.jpg"},
+{"id":"680","name":"周深-独白","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-独白.mp3","images":"img/a5.jpg"},
+{"id":"681","name":"周深-放鹤图","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-放鹤图.mp3","images":"img/a1.jpg"},
+{"id":"682","name":"周深-放心去飞","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-放心去飞.mp3","images":"img/a2.jpg"},
+{"id":"683","name":"周深-风景","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-风景.mp3","images":"img/a3.jpg"},
+{"id":"684","name":"周深-哥哥","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-哥哥.mp3","images":"img/a4.jpg"},
+{"id":"685","name":"周深-归处","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-归处.mp3","images":"img/a5.jpg"},
+{"id":"686","name":"周深-过尽千帆","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-过尽千帆.mp3","images":"img/a1.jpg"},
+{"id":"687","name":"周深-海藏","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-海藏.mp3","images":"img/a2.jpg"},
+{"id":"688","name":"周深-海上蝶","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-海上蝶.mp3","images":"img/a3.jpg"},
+{"id":"689","name":"周深-和光同尘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-和光同尘.mp3","images":"img/a4.jpg"},
+{"id":"690","name":"周深-花开","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-花开.mp3","images":"img/a5.jpg"},
+{"id":"691","name":"周深-化身孤岛的鲸","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-化身孤岛的鲸.mp3","images":"img/a1.jpg"},
+{"id":"692","name":"周深-画绢","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-画绢.mp3","images":"img/a2.jpg"},
+{"id":"693","name":"周深-欢颜","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-欢颜.mp3","images":"img/a3.jpg"},
+{"id":"694","name":"周深-荒城渡","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-荒城渡.mp3","images":"img/a4.jpg"},
+{"id":"695","name":"周深-荒原星火","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-荒原星火.mp3","images":"img/a5.jpg"},
+{"id":"696","name":"周深-回声","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-回声.mp3","images":"img/a1.jpg"},
+{"id":"697","name":"周深-卷珠帘","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-卷珠帘.mp3","images":"img/a2.jpg"},
+{"id":"698","name":"周深-卡布叻船长","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-卡布叻船长.mp3","images":"img/a3.jpg"},
+{"id":"699","name":"周深-可它爱着这个世界","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-可它爱着这个世界.mp3","images":"img/a4.jpg"},
+{"id":"700","name":"周深-渴望遇见","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-渴望遇见.mp3","images":"img/a5.jpg"},
+{"id":"701","name":"周深-渴望遇见(情感版)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-渴望遇见(情感版).mp3","images":"img/a1.jpg"},
+{"id":"702","name":"周深-垃圾别烦我","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-垃圾别烦我.mp3","images":"img/a2.jpg"},
+{"id":"703","name":"周深-来不及勇敢","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-来不及勇敢.mp3","images":"img/a3.jpg"},
+{"id":"704","name":"周深-落花","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-落花.mp3","images":"img/a4.jpg"},
+{"id":"705","name":"周深-没有说完的故事","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-没有说完的故事.mp3","images":"img/a5.jpg"},
+{"id":"706","name":"周深-梅香如故(独唱版)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-梅香如故(独唱版).mp3","images":"img/a1.jpg"},
+{"id":"707","name":"周深-美错","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-美错.mp3","images":"img/a2.jpg"},
+{"id":"708","name":"周深-梦回神都","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-梦回神都.mp3","images":"img/a3.jpg"},
+{"id":"709","name":"周深-梦留别","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-梦留别.mp3","images":"img/a4.jpg"},
+{"id":"710","name":"周深-明月传说","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-明月传说.mp3","images":"img/a5.jpg"},
+{"id":"711","name":"周深-妳","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-妳.mp3","images":"img/a1.jpg"},
+{"id":"712","name":"周深-年轮(Live)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-年轮(Live).mp3","images":"img/a2.jpg"},
+{"id":"713","name":"周深-念","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-念.mp3","images":"img/a3.jpg"},
+{"id":"714","name":"周深-浓情淡如你","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-浓情淡如你.mp3","images":"img/a4.jpg"},
+{"id":"715","name":"周深-起风了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-起风了.mp3","images":"img/a5.jpg"},
+{"id":"716","name":"周深-浅浅","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-浅浅.mp3","images":"img/a1.jpg"},
+{"id":"717","name":"周深-亲爱的旅人啊","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-亲爱的旅人啊.mp3","images":"img/a2.jpg"},
+{"id":"718","name":"周深-情不由衷","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-情不由衷.mp3","images":"img/a3.jpg"},
+{"id":"719","name":"周深-情是何物","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-情是何物.mp3","images":"img/a4.jpg"},
+{"id":"720","name":"周深-情意结","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-情意结.mp3","images":"img/a5.jpg"},
+{"id":"721","name":"周深-水形物语","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-水形物语.mp3","images":"img/a1.jpg"},
+{"id":"722","name":"周深-斯卡布罗集市(2018声入人心现场)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-斯卡布罗集市(2018声入人心现场).mp3","images":"img/a2.jpg"},
+{"id":"723","name":"周深-随风","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-随风.mp3","images":"img/a3.jpg"},
+{"id":"724","name":"周深-天地为念","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-天地为念.mp3","images":"img/a4.jpg"},
+{"id":"725","name":"周深-瞳(出类拔萃)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-瞳(出类拔萃).mp3","images":"img/a5.jpg"},
+{"id":"726","name":"周深-蜕","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-蜕.mp3","images":"img/a1.jpg"},
+{"id":"727","name":"周深-微光海洋","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-微光海洋.mp3","images":"img/a2.jpg"},
+{"id":"728","name":"周深-为爱追寻","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-为爱追寻.mp3","images":"img/a3.jpg"},
+{"id":"729","name":"周深-我是你的谁","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-我是你的谁.mp3","images":"img/a4.jpg"},
+{"id":"730","name":"周深-相守","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-相守.mp3","images":"img/a5.jpg"},
+{"id":"731","name":"周深-小幸运","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-小幸运.mp3","images":"img/a1.jpg"},
+{"id":"732","name":"周深-雪落下的声音(Live)","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-雪落下的声音(Live).mp3","images":"img/a2.jpg"},
+{"id":"733","name":"周深-叶子","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-叶子.mp3","images":"img/a3.jpg"},
+{"id":"734","name":"周深-一缕执念","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-一缕执念.mp3","images":"img/a4.jpg"},
+{"id":"735","name":"周深-迎刃","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-迎刃.mp3","images":"img/a5.jpg"},
+{"id":"736","name":"周深-与卿","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-与卿.mp3","images":"img/a1.jpg"},
+{"id":"737","name":"周深-缘起","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-缘起.mp3","images":"img/a2.jpg"},
+{"id":"738","name":"周深-愿","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-愿.mp3","images":"img/a3.jpg"},
+{"id":"739","name":"周深-愿得一心人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-愿得一心人.mp3","images":"img/a4.jpg"},
+{"id":"740","name":"周深-拙慕","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周深-拙慕.mp3","images":"img/a5.jpg"},
+{"id":"741","name":"周迅-飘摇","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周迅-飘摇.mp3","images":"img/a1.jpg"},
+{"id":"742","name":"周艳泓-要嫁就嫁灰太狼","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周艳泓-要嫁就嫁灰太狼.mp3","images":"img/a2.jpg"},
+{"id":"743","name":"周治平-那一场风花雪月的故事","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/周治平-那一场风花雪月的故事.mp3","images":"img/a3.jpg"},
+{"id":"744","name":"庄心妍、祁隆-一万个舍不得","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庄心妍、祁隆-一万个舍不得.mp3","images":"img/a4.jpg"},
+{"id":"745","name":"庄心妍-爱囚","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庄心妍-爱囚.mp3","images":"img/a5.jpg"},
+{"id":"746","name":"庄心妍-以后的以后","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庄心妍-以后的以后.mp3","images":"img/a1.jpg"},
+{"id":"747","name":"庄心妍-再见只是陌生人","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庄心妍-再见只是陌生人.mp3","images":"img/a2.jpg"},
+{"id":"748","name":"庄心妍-走着走着就散了","singer":"","duration":"","src":"http://music.asia.ga/OnedriveTJ/音乐视听/精选/庄心妍-走着走着就散了.mp3","images":"img/a3.jpg"},
+
+    ]
+
+//formateTime(61)--->01:01
+
+
+//获取各种标签
+
+    var player = document.querySelector("#player");
+    var bz_music = document.querySelector("#bz_music");
+
+    //歌曲信息部分
+    var left_photo = document.querySelector("#left_photo");
+    var list_title = document.querySelector("#list_title");
+    var list_singer = document.querySelector("#list_singer");
+    var process_slide = document.querySelector("#process_slide");
+    var process = document.querySelector("#process");
+    var showHide = document.querySelector("#showHide");
+    
+    //控制按钮部分
+    var time = document.querySelector("#time");
+    var　btnPlay　= document.querySelector("#btnPlay");
+    var　volume_slide　= document.querySelector("#volume_slide");
+    var　volume　= document.querySelector("#volume");
+    
+    //播放列表部分
+    var play_list = document.querySelector("#play_list");
+    
+    var play_list_area = document.querySelector("#play_list_area");
+
+//动态加载播放列表
+    function loadPlayList(){
+        //遍历播放列表
+        for(var i=0;i<music_list.length;i++){
+            //将每个对象，分别存到music中
+            var music = music_list[i];
+            //创建li标签
+            var liTag = document.createElement("li");
+            //创建歌曲名span标签
+            var spanTitleTag = document.createElement("span");
+            //创建时长span标签
+            var spanDurationTag = document.createElement("span");
+            
+            //为ul添加li标签，子节点
+            play_list.appendChild(liTag);
+            //为li标签，添加子节点
+            liTag.appendChild(spanTitleTag);
+            liTag.appendChild(spanDurationTag);
+            
+            //添加内容
+            spanTitleTag.innerHTML=music.name;
+            spanDurationTag.innerHTML=music.duration;
+            
+            //添加类名
+            spanTitleTag.classList.add("list_title");
+            spanDurationTag.classList.add("list_time");
+            
+            //自定义属性
+            //需要用的时候，直接从标签中取值，不需要和后台交互
+            liTag.setAttribute("data-index",i);
+            
+            //当点击每一个li标签的时候
+            //重新载入歌曲信息(专辑图片、歌曲路径、歌曲名、歌手名)
+            //播放当前点击的音乐
+            liTag.addEventListener("click",function(){
+                //获取每个li标签的歌曲id
+                var index = this.getAttribute("data-index");
+//              console.log(index);
+                //将歌曲id赋给，全局变量play_index
+                play_index = index;
+                //调用载入歌曲函数
+                loadMusic();
+                //播放音乐
+                playMusic();
+            })
+        }
+    }
+    
+//载入歌曲信息
+    function loadMusic(){
+        var music = music_list[play_index];
+        //改变专辑图片
+        left_photo.src = music.images;
+        //改变歌曲名
+        list_title.innerHTML = music.name;
+        //改变歌手名
+        list_singer.innerHTML = music.singer;
+        //改变歌曲路径
+        player.src = music.src;
+    }
+    
+//播放,暂停音乐
+    btnPlay.addEventListener("click",function(){
+        //paused,表示当前音乐是否为暂停状态
+        if(player.paused){
+            //play(),播放当前音乐
+            playMusic();
+        }
+        else {
+            //pause(),暂停当前音乐
+            player.pause();
+            btnPlay.setAttribute("class","btn_play fa fa-play");
+        }
+    })
+
+//上一曲
+    function backword(){
+        if(play_index==0){
+            play_index=music_list.length-1;
+        }
+        else{
+            //改变播放序号
+            play_index--;
+        }
+        //重新载入
+        loadMusic();
+        //播放
+        playMusic();   
+    }
+    
+//下一曲
+    function forward(){
+        if(play_index==music_list.length-1){
+            play_index=0;
+        }
+        else{
+            //改变播放序号
+            play_index++;
+        }
+        //重新载入
+        loadMusic();
+        //播放
+        playMusic();   
+    }
+    
+//播放
+    function playMusic(){
+        player.play();
+        btnPlay.setAttribute("class","btn_play fa fa-pause"); 
+    }
+
+
+
+//时间转换
+
+    function formateTime(time){
+        if(time>3600){
+            var hour = parseInt(time/3600);
+            var minute = parseInt(time%3600/60);
+            var second = parseInt(time%3600);
+            hour=hour>=10?hour:"0"+hour;
+            minute=minute>=10?minute:"0"+minute;
+            second=second>=10?second:"0"+second;
+            return hour+":"+minute+":"+second;
+        }
+        else{
+            var minute = parseInt(time/60);
+            var second = parseInt(time%60);
+            minute=minute>=10?minute:"0"+minute;
+            second=second>=10?second:"0"+second;
+            return minute+":"+second;  
+        }
+
+    }
+    
+//设置定时器
+    window.setInterval(function(){
+        //currentTime,当前播放的秒数!
+//      console.log(player.currentTime);
+        time.innerHTML = formateTime(player.currentTime);
+        //duration,当前音乐的总时长,秒数!!!
+        var percent = player.currentTime/player.duration;
+//      console.log(percent);
+        process_slide.style.width=percent*100+"%";
+    },100)
+    
+//静音
+    function volumeOff(){
+        //volume,[0,1]
+        player.volume=0;
+        volume_slide.style.width=0;
+        console.log(player.volume);
+    }
+    
+//最大音 
+    function volumeUp(){
+        player.volume=1;
+        volume_slide.style.width="100%";
+        console.log(player.volume);
+    }
+
+//通过滑块控制音量大小
+    volume.addEventListener("click",function(event){
+        //得到当前点击的位置
+        var currentVolume = event.offsetX/this.offsetWidth;
+        console.log(currentVolume);
+        //设置音量
+        player.volume=currentVolume;
+        volume_slide.style.width = currentVolume*100+"%";
+    })
+
+//通过滑块控制音乐进度
+    process.addEventListener("click",function(event){
+        //计算点击位置的百分比
+        var currentValue = event.offsetX/this.offsetWidth;
+        
+        //因为我们已经设置了定时器,在实时监控我们当前音乐的变化
+        //因此,我们通过设置当前播放的音乐时长,影响我们的进度条
+        player.currentTime = player.duration*currentValue;
+    })
+
+//显示隐藏播放列表
+    function showMusicList(){
+        //当前已经显示播放列表
+        if(flag){
+            play_list_area.style.display="none";
+            bz_music.style.width="500px";
+            showHide.style.color="#666";
+            flag=0;
+        }
+        else {
+            play_list_area.style.display="block";
+            bz_music.style.width="700px";
+            showHide.style.color="#DDD";
+            flag=1;
+        }
+    }
+
+
+//初始化
+    //载入播放列表
+    loadPlayList();
+    //播放序号
+    var play_index=0;
+    //初始音量
+    player.volume=0.5;
+    //初始化显示播放列表
+    //当flag为1的时候,表示列表显示(当前状态)
+    //当flag为0的时候,表示列表隐藏(当前状态)
+    var flag=1;
+
