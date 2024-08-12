@@ -1,0 +1,13 @@
+﻿DATA("focus-等待着你","https://vercel.11.wf/free163person/音乐视听/泰国音乐/focus-等待着你.mp3","1");
+DATA("Lydia-DontLeaveMeHere","https://vercel.11.wf/free163person/音乐视听/泰国音乐/Lydia-DontLeaveMeHere.mp3","2");
+DATA("Lydia-YOU","https://vercel.11.wf/free163person/音乐视听/泰国音乐/Lydia-YOU.mp3","3");
+DATA("lydia-为什么不接电话","https://vercel.11.wf/free163person/音乐视听/泰国音乐/lydia-为什么不接电话.mp3","4");
+DATA("Lydia-前女友的规则","https://vercel.11.wf/free163person/音乐视听/泰国音乐/Lydia-前女友的规则.mp3","5");
+DATA("Lydia-如果我说爱你行吗","https://vercel.11.wf/free163person/音乐视听/泰国音乐/Lydia-如果我说爱你行吗.mp3","6");
+DATA("sara-即使知道要见面","https://vercel.11.wf/free163person/音乐视听/泰国音乐/sara-即使知道要见面.mp3","7");
+DATA("Sara-总好过难过","https://vercel.11.wf/free163person/音乐视听/泰国音乐/Sara-总好过难过.mp3","8");
+DATA("sara-想说什么吗","https://vercel.11.wf/free163person/音乐视听/泰国音乐/sara-想说什么吗.mp3","9");
+DATA("sara-是否要忘记","https://vercel.11.wf/free163person/音乐视听/泰国音乐/sara-是否要忘记.mp3","10");
+DATA("Sara-没关系","https://vercel.11.wf/free163person/音乐视听/泰国音乐/Sara-没关系.mp3","11");
+DATA("Zaza-KuamPidTidTua","https://vercel.11.wf/free163person/音乐视听/泰国音乐/Zaza-KuamPidTidTua.mp3","12");
+DATA("泰国歌曲-慢嗨舞曲","https://vercel.11.wf/free163person/音乐视听/泰国音乐/泰国歌曲-慢嗨舞曲.mp3","13");

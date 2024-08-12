@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>听松阁在线听音乐 - 444.info</title>
+
+<link rel="stylesheet" href="css/smusic.css">
+<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu_bubble.css" />
+		<script src="js/snap.svg-min.js"></script>
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+</head>
+<body background="img/bg2.jpg">
+
+<div>
+			<div class="menu-wrap">
+				<nav class="menu">
+					<div class="icon-list">
+						<a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>国语简选</span></a>
+						<a href="kong.html"><i class="fa fa-fw fa-bell-o"></i><span>空灵音乐</span></a>
+						<a href="jingxuan.html"><i class="fa fa-fw fa-comment-o"></i><span>国语精选</span></a>
+						<a href="korea.html"><i class="fa fa-fw fa-bar-chart-o"></i><span>韩国音乐</span></a>
+						<a href="usa.html"><i class="fa fa-fw fa-newspaper-o"></i><span>欧美音乐</span></a>
+						<a href="japan.html"><i class="fa fa-fw fa-envelope-o"></i><span>日本音乐</span></a>
+						<a href="thailand.html"><i class="fa fa-fw fa-star-o"></i><span>泰国音乐</span></a>
+						<a href="india.html"><i class="fa fa-fw fa-bell-o"></i><span>印度音乐</span></a>
+						<a href="weimei.html"><i class="fa fa-fw fa-comment-o"></i><span>唯美纯音乐</span></a>
+						<a href="fksh.html"><i class="fa fa-fw fa-bar-chart-o"></i><span>放空舒缓音乐</span></a>
+						<a href="zrzs.html"><i class="fa fa-fw fa-newspaper-o"></i><span>自然之声</span></a>
+						<a href="dlj1000.html"><i class="fa fa-fw fa-envelope-o"></i><span>邓丽君1000首</span></a>
+						
+					</div>
+				</nav>
+				<button class="close-button" id="close-button">Close Menu</button>
+				<div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+						<path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+					</svg>
+				</div>
+			</div>
+			<button class="menu-button" id="open-button">Open Menu</button>
+			<div class="content-wrap">
+				
+				
+<div class="grid-music-container f-usn">
+    <div class="m-music-play-wrap">
+        <div class="u-cover"></div>
+        <div class="m-now-info">
+            <h1 class="u-music-title"><b><small>...</small><small>...</small></b></h1>
+            <div class="m-now-controls">
+                <div class="u-control u-process">
+                    <span class="buffer-process"></span>
+                    <span class="current-process"></span>
+                </div>
+                <div class="u-control u-time">00:00/00:00</div>
+                <div class="u-control u-volume">
+                    <div class="volume-process" data-volume="0.50">
+                        <span class="volume-current"></span>
+                        <span class="volume-bar"></span>
+                        <span class="volume-event"></span>
+                    </div>
+                    <a class="volume-control"></a>
+                </div>
+            </div>
+            <div class="m-play-controls">
+                <a class="u-play-btn prev" title="上一曲"></a>
+                <a class="u-play-btn ctrl-play play" title="暂停"></a>
+                <a class="u-play-btn next" title="下一曲"></a><br>
+               
+            </div>
+        </div>
+    </div>
+    <div class="f-cb">&nbsp;</div>
+    <div class="m-music-list-wrap"></div>
+</div>
+
+<script src="js/smusic.min.js"></script>
+<script>
+var musicList = [
+{title : 'BoA',singer : 'Action',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Action.mp3'},
+{title : 'BoA',singer : 'Addiction(Bo)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Addiction(Bo).mp3'},
+{title : 'BoA',singer : 'Adrenaline',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Adrenaline.mp3'},
+{title : 'BoA',singer : 'Again',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Again.mp3'},
+{title : 'BoA',singer : 'Aggressive',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Aggressive.mp3'},
+{title : 'BoA',singer : 'AllThatJazz',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-AllThatJazz.mp3'},
+{title : 'BoA',singer : 'AmazingKiss(EnglishVersion)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-AmazingKiss(EnglishVersion).mp3'},
+{title : 'BoA',singer : 'AmazingKiss',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-AmazingKiss.mp3'},
+{title : 'BoA',singer : 'Atl(AtlantisPrincess)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Atl(AtlantisPrincess).mp3'},
+{title : 'BoA',singer : 'Azalea',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Azalea.mp3'},
+{title : 'BoA',singer : 'BadDrive',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-BadDrive.mp3'},
+{title : 'BoA',singer : 'BeautifulFlowers',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-BeautifulFlowers.mp3'},
+{title : 'BoA',singer : 'BelieveinLOVE',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-BelieveinLOVE.mp3'},
+{title : 'BoA',singer : 'BesideYou',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-BesideYou.mp3'},
+{title : 'BoA',singer : 'BestFriend',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-BestFriend.mp3'},
+{title : 'BoA',singer : 'BIO',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-BIO.mp3'},
+{title : 'BoA',singer : 'BoA',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-BoA.mp3'},
+{title : 'BoA',singer : 'BokuWoYuboKoe',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-BokuWoYuboKoe.mp3'},
+{title : 'BoA',singer : 'Brave',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Brave.mp3'},
+{title : 'BoA',singer : 'Butterfly',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Butterfly.mp3'},
+{title : 'BoA',singer : 'CAMO',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-CAMO.mp3'},
+{title : 'BoA',singer : 'CandleLights',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-CandleLights.mp3'},
+{title : 'BoA',singer : 'CantLetGo',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-CantLetGo.mp3'},
+{title : 'BoA',singer : 'CloseToMe',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-CloseToMe.mp3'},
+{title : 'BoA',singer : 'Cloud',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Cloud.mp3'},
+{title : 'BoA',singer : 'Control',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Control.mp3'},
+{title : 'BoA',singer : 'Copy&Paste',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Copy&Paste.mp3'},
+{title : 'BoA',singer : 'CrazyAbout',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-CrazyAbout.mp3'},
+{title : 'BoA',singer : 'CutMeOff',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-CutMeOff.mp3'},
+{title : 'BoA',singer : 'Dangerous',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Dangerous.mp3'},
+{title : 'BoA',singer : 'DearMyLove..',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DearMyLove...mp3'},
+{title : 'BoA',singer : 'DiamondHeart',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DiamondHeart.mp3'},
+{title : 'BoA',singer : 'DidYa',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DidYa.mp3'},
+{title : 'BoA',singer : 'Dis(Disturbance)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Dis(Disturbance).mp3'},
+{title : 'BoA',singer : 'Discovery',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Discovery.mp3'},
+{title : 'BoA',singer : 'Distance',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Distance.mp3'},
+{title : 'BoA',singer : 'Distiny',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Distiny.mp3'},
+{title : 'BoA',singer : 'DontKnowWhatToSay',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DontKnowWhatToSay.mp3'},
+{title : 'BoA',singer : 'DontStartNow(EnglishVersion)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DontStartNow(EnglishVersion).mp3'},
+{title : 'BoA',singer : 'DontStartNow(KoreanVersion)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DontStartNow(KoreanVersion).mp3'},
+{title : 'BoA',singer : 'DontStartNow',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DontStartNow.mp3'},
+{title : 'BoA',singer : 'DoTheMotion',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DoTheMotion.mp3'},
+{title : 'BoA',singer : 'Double',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Double.mp3'},
+{title : 'BoA',singer : 'DoYouLoveMe()',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DoYouLoveMe()-Bo).mp3'},
+{title : 'BoA',singer : 'DreamsComeTrue',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DreamsComeTrue.mp3'},
+{title : 'BoA',singer : 'DressOff',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-DressOff.mp3'},
+{title : 'BoA',singer : 'Duvet',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Duvet.mp3'},
+{title : 'BoA',singer : 'Earthsong',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Earthsong.mp3'},
+{title : 'BoA',singer : 'EatYouUp',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-EatYouUp.mp3'},
+{title : 'BoA',singer : 'Energetic',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Energetic.mp3'},
+{title : 'BoA',singer : 'Everlasting',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Everlasting.mp3'},
+{title : 'BoA',singer : 'EVERYBODYKNOWS',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-EVERYBODYKNOWS.mp3'},
+{title : 'BoA',singer : 'EveryHeart',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-EveryHeart.mp3'},
+{title : 'BoA',singer : 'EverythingNeedsLove',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-EverythingNeedsLove.mp3'},
+{title : 'BoA',singer : 'FeelMe',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-FeelMe.mp3'},
+{title : 'BoA',singer : 'FeelTheSame',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-FeelTheSame.mp3'},
+{title : 'BoA',singer : 'FirstSnow',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-FirstSnow.mp3'},
+{title : 'BoA',singer : 'Flower',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Flower.mp3'},
+{title : 'BoA',singer : 'Fox',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Fox.mp3'},
+{title : 'BoA',singer : 'GardenInTheAir',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-GardenInTheAir.mp3'},
+{title : 'BoA',singer : 'GirlsOnTop(KoreanVer.)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-GirlsOnTop(KoreanVer.).mp3'},
+{title : 'BoA',singer : 'GotMeGood',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-GotMeGood.mp3'},
+{title : 'BoA',singer : 'GraciousDays',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-GraciousDays.mp3'},
+{title : 'BoA',singer : 'Gravity',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Gravity.mp3'},
+{title : 'BoA',singer : 'GreenLight',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-GreenLight.mp3'},
+{title : 'BoA',singer : 'Happiness',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Happiness.mp3'},
+{title : 'BoA',singer : 'HappinessLies',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-HappinessLies.mp3'},
+{title : 'BoA',singer : 'HappyBirthday',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-HappyBirthday.mp3'},
+{title : 'BoA',singer : 'Heroine(Bo)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Heroine(Bo).mp3'},
+{title : 'BoA',singer : 'HoneyDiamonds',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-HoneyDiamonds.mp3'},
+{title : 'BoA',singer : 'HurricaneVenus',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-HurricaneVenus.mp3'},
+{title : 'BoA',singer : 'HurricanVenus',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-HurricanVenus.mp3'},
+{title : 'BoA',singer : 'HypnoticDancefloor',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-HypnoticDancefloor.mp3'},
+{title : 'BoA',singer : 'Ibelieve',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Ibelieve.mp3'},
+{title : 'BoA',singer : 'IDontMind',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-IDontMind.mp3'},
+{title : 'BoA',singer : 'IdPeaceB(EnglishVersion)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-IdPeaceB(EnglishVersion).mp3'},
+{title : 'BoA',singer : 'IdPeaceB',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-IdPeaceB.mp3'},
+{title : 'BoA',singer : 'ImSorry',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ImSorry.mp3'},
+{title : 'BoA',singer : 'ImYourLadyTonight',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ImYourLadyTonight.mp3'},
+{title : 'BoA',singer : 'ISpy',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ISpy.mp3'},
+{title : 'BoA',singer : 'JewelSong',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-JewelSong.mp3'},
+{title : 'BoA',singer : 'JoyfulSmile',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-JoyfulSmile.mp3'},
+{title : 'BoA',singer : 'KeyOfHeart',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-KeyOfHeart.mp3'},
+{title : 'BoA',singer : 'KissMyLips',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-KissMyLips.mp3'},
+{title : 'BoA',singer : 'LALLAOLALOVESONG',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LALLAOLALOVESONG.mp3'},
+{title : 'BoA',singer : 'LastCristmas',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LastCristmas.mp3'},
+{title : 'BoA',singer : 'LetMe',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LetMe.mp3'},
+{title : 'BoA',singer : 'LetUGo',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LetUGo.mp3'},
+{title : 'BoA',singer : 'ListenToMyHeart(BonusTrack)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ListenToMyHeart(BonusTrack).mp3'},
+{title : 'BoA',singer : 'LISTENTOMYHEART(EnglishVersion)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LISTENTOMYHEART(EnglishVersion).mp3'},
+{title : 'BoA',singer : 'LittleBird',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LittleBird.mp3'},
+{title : 'BoA',singer : 'LittleMore',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LittleMore.mp3'},
+{title : 'BoA',singer : 'LOLLIPOP',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LOLLIPOP.mp3'},
+{title : 'BoA',singer : 'LongTimeNoSee',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LongTimeNoSee.mp3'},
+{title : 'BoA',singer : 'LookWhosTalking',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LookWhosTalking.mp3'},
+{title : 'BoA',singer : 'LOVE',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LOVE.mp3'},
+{title : 'BoA',singer : 'LoveCanMakeAMiracle',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LoveCanMakeAMiracle.mp3'},
+{title : 'BoA',singer : 'LoveHurts',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LoveHurts.mp3'},
+{title : 'BoA',singer : 'LoveIsJustWhatYouCan’tSee',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LoveIsJustWhatYouCan’tSee.mp3'},
+{title : 'BoA',singer : 'LoveLetter',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-LoveLetter.mp3'},
+{title : 'BoA',singer : 'MakeASecret',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MakeASecret.mp3'},
+{title : 'BoA',singer : 'MASAYUMECHASING',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MASAYUMECHASING.mp3'},
+{title : 'BoA',singer : 'MaydayMayday',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MaydayMayday.mp3'},
+{title : 'BoA',singer : 'MegaStep',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MegaStep.mp3'},
+{title : 'BoA',singer : 'MEP(MyElectronicPiano)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MEP(MyElectronicPiano).mp3'},
+{title : 'BoA',singer : 'Milestone',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Milestone.mp3'},
+{title : 'BoA',singer : 'MilkyWay',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MilkyWay.mp3'},
+{title : 'BoA',singer : 'MoonSunrise',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MoonSunrise.mp3'},
+{title : 'BoA',singer : 'Moto',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Moto.mp3'},
+{title : 'BoA',singer : 'MyGenie',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MyGenie.mp3'},
+{title : 'BoA',singer : 'MyName(KroeanVer.)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MyName(KroeanVer.).mp3'},
+{title : 'BoA',singer : 'MyOnlyOne',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MyOnlyOne.mp3'},
+{title : 'BoA',singer : 'MySweetie',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-MySweetie.mp3'},
+{title : 'BoA',singer : 'NEGADOLA',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-NEGADOLA.mp3'},
+{title : 'BoA',singer : 'NextStep',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-NextStep.mp3'},
+{title : 'BoA',singer : 'No1',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-No1.mp3'},
+{title : 'BoA',singer : 'NobodyButYou',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-NobodyButYou.mp3'},
+{title : 'BoA',singer : 'NoMoreMakeMeSick',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-NoMoreMakeMeSick.mp3'},
+{title : 'BoA',singer : 'NothingsGonnaChange',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-NothingsGonnaChange.mp3'},
+{title : 'BoA',singer : 'NotOverU',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-NotOverU.mp3'},
+{title : 'BoA',singer : 'Obsessed',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Obsessed.mp3'},
+{title : 'BoA',singer : 'OndWingsEmbracingEachOther',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-OndWingsEmbracingEachOther.mp3'},
+{title : 'BoA',singer : 'ONESHOTTWOSHOT',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ONESHOTTWOSHOT.mp3'},
+{title : 'BoA',singer : 'OnlyOne(Instrumental)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-OnlyOne(Instrumental).mp3'},
+{title : 'BoA',singer : 'OnlyOne',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-OnlyOne.mp3'},
+{title : 'BoA',singer : 'Op',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Op.mp3'},
+{title : 'BoA',singer : 'OurLoveToMyParents',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-OurLoveToMyParents.mp3'},
+{title : 'BoA',singer : 'OutgrowReadyButterfly',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-OutgrowReadyButterfly.mp3'},
+{title : 'BoA',singer : 'PainLove',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-PainLove.mp3'},
+{title : 'BoA',singer : 'POL(PowerOfLove)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-POL(PowerOfLove).mp3'},
+{title : 'BoA',singer : 'Power',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Power.mp3'},
+{title : 'BoA',singer : 'pr(SpringRain)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-pr(SpringRain).mp3'},
+{title : 'BoA',singer : 'Precious',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Precious.mp3'},
+{title : 'BoA',singer : 'REALIZE(staywithme)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-REALIZE(staywithme).mp3'},
+{title : 'BoA',singer : 'RECOLLECTION',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-RECOLLECTION.mp3'},
+{title : 'BoA',singer : 'RightHereRightEverywhere',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-RightHereRightEverywhere.mp3'},
+{title : 'BoA',singer : 'RockWithYou',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-RockWithYou.mp3'},
+{title : 'BoA',singer : 'SARA',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SARA.mp3'},
+{title : 'BoA',singer : 'Sars',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Sars.mp3'},
+{title : 'BoA',singer : 'SearchingForTruth',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SearchingForTruth.mp3'},
+{title : 'BoA',singer : 'ShareYourHeart(WithMe)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ShareYourHeart(WithMe).mp3'},
+{title : 'BoA',singer : 'Shattered',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Shattered.mp3'},
+{title : 'BoA',singer : 'ShineWeAre!(Instrumental)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ShineWeAre!(Instrumental).mp3'},
+{title : 'BoA',singer : 'ShineWeAre!',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ShineWeAre!.mp3'},
+{title : 'BoA',singer : 'shinewoare',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-shinewoare.mp3'},
+{title : 'BoA',singer : 'ShyLove',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ShyLove.mp3'},
+{title : 'BoA',singer : 'SilentScreamerz',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SilentScreamerz.mp3'},
+{title : 'BoA',singer : 'SmileAgain',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SmileAgain.mp3'},
+{title : 'BoA',singer : 'SnowWhite',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SnowWhite.mp3'},
+{title : 'BoA',singer : 'SomedaySomewhere',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SomedaySomewhere.mp3'},
+{title : 'BoA',singer : 'SongWithNoName',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SongWithNoName.mp3'},
+{title : 'BoA',singer : 'SoReal',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SoReal.mp3'},
+{title : 'BoA',singer : 'Soundscape',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Soundscape.mp3'},
+{title : 'BoA',singer : 'Sparkling',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Sparkling.mp3'},
+{title : 'BoA',singer : 'StartOver',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-StartOver.mp3'},
+{title : 'BoA',singer : 'StayMyGold',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-StayMyGold.mp3'},
+{title : 'BoA',singer : 'Still.',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Still..mp3'},
+{title : 'BoA',singer : 'Style',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Style.mp3'},
+{title : 'BoA',singer : 'Sunshine',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Sunshine.mp3'},
+{title : 'BoA',singer : 'SweetImpact',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-SweetImpact.mp3'},
+{title : 'BoA',singer : 'Temptations',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Temptations.mp3'},
+{title : 'BoA',singer : 'TheChristmasSong',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-TheChristmasSong.mp3'},
+{title : 'BoA',singer : 'TheLightsOfSeoul',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-TheLightsOfSeoul.mp3'},
+{title : 'BoA',singer : 'TheShadow',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-TheShadow.mp3'},
+{title : 'BoA',singer : 'TheShowMustGoOn',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-TheShowMustGoOn.mp3'},
+{title : 'BoA',singer : 'TheTop',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-TheTop.mp3'},
+{title : 'BoA',singer : 'TimeToBegin',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-TimeToBegin.mp3'},
+{title : 'BoA',singer : 'Touch',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Touch.mp3'},
+{title : 'BoA',singer : 'Touched',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Touched.mp3'},
+{title : 'BoA',singer : 'Tragic',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Tragic.mp3'},
+{title : 'BoA',singer : 'Tree',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Tree.mp3'},
+{title : 'BoA',singer : 've(EveryBreathYouTake)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ve(EveryBreathYouTake).mp3'},
+{title : 'BoA',singer : 'We(Bo)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-We(Bo).mp3'},
+{title : 'BoA',singer : 'Whatever',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Whatever.mp3'},
+{title : 'BoA',singer : 'WhiteChristmas',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-WhiteChristmas.mp3'},
+{title : 'BoA',singer : 'WhiteWishes(EnglishVersion)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-WhiteWishes(EnglishVersion).mp3'},
+{title : 'BoA',singer : 'WhiteWishes',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-WhiteWishes.mp3'},
+{title : 'BoA',singer : 'WinterLove',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-WinterLove.mp3'},
+{title : 'BoA',singer : 'WithU',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-WithU.mp3'},
+{title : 'BoA',singer : 'WithYou',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-WithYou.mp3'},
+{title : 'BoA',singer : 'Woman',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-Woman.mp3'},
+{title : 'BoA',singer : 'WOOWEEKEND',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-WOOWEEKEND.mp3'},
+{title : 'BoA',singer : 'YourColor',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-YourColor.mp3'},
+{title : 'BoA',singer : 'ギャップにやられた!',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-ギャップにやられた!.mp3'},
+{title : 'BoA',singer : 'メリクリ(BEST&USAVersion)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-メリクリ(BEST&USAVersion).mp3'},
+{title : 'BoA',singer : 'メリクリ',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-メリクリ.mp3'},
+{title : 'BoA',singer : '世界の片隅で',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-世界の片隅で.mp3'},
+{title : 'BoA',singer : '世界的象征',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-世界的象征.mp3'},
+{title : 'BoA',singer : '大家的心情',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-大家的心情.mp3'},
+{title : 'BoA',singer : '奇蹟',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-奇蹟.mp3'},
+{title : 'BoA',singer : '心の手紙',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-心の手紙.mp3'},
+{title : 'BoA',singer : '抱きしめる',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-抱きしめる.mp3'},
+{title : 'BoA',singer : '气持ちはつたわる',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-气持ちはつたわる.mp3'},
+{title : 'BoA',singer : '永远',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-永远.mp3'},
+{title : 'BoA',singer : '红鼻子的驯鹿',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-红鼻子的驯鹿.mp3'},
+{title : 'BoA',singer : '薄雾',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-薄雾.mp3'},
+{title : 'BoA',singer : '???',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-???.mp3'},
+{title : 'BoA',singer : '??,???(NoWay)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA-??,???(NoWay).mp3'},
+{title : 'BoA、Akon、KardinalOffishall',singer : 'Beautiful',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、Akon、KardinalOffishall-Beautiful.mp3'},
+{title : 'BoA、BeatBurger',singer : 'MusicIsWonderful',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、BeatBurger-MusicIsWonderful.mp3'},
+{title : 'BoA、Beenzino',singer : 'NoMatterWhat',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、Beenzino-NoMatterWhat.mp3'},
+{title : 'BoA、Crush',singer : 'StarryNight(Feat.Crush)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、Crush-StarryNight(Feat.Crush).mp3'},
+{title : 'BoA、CrystalKay',singer : 'Girlfriend',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、CrystalKay-Girlfriend.mp3'},
+{title : 'BoA、DABO',singer : 'WindingRoad',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、DABO-WindingRoad.mp3'},
+{title : 'BoA、EddyKim',singer : 'DoubleJack',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、EddyKim-DoubleJack.mp3'},
+{title : 'BoA、Gaeko',singer : 'WhoAreYou',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、Gaeko-WhoAreYou.mp3'},
+{title : 'BoA、SEAMO',singer : 'HeyBoy,HeyGirl',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、SEAMO-HeyBoy,HeyGirl.mp3'},
+{title : 'BoA、SeanGarrett',singer : 'IDidItForLove',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、SeanGarrett-IDidItForLove.mp3'},
+{title : 'BoA、VERBAL',singer : 'BUMPBUMP!',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、VERBAL-BUMPBUMP!.mp3'},
+{title : 'BoA、WISE',singer : 'MyWayYourWay',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、WISE-MyWayYourWay.mp3'},
+{title : 'BoA、YutakaFurukawa',singer : 'LOSEYOURMIND',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、YutakaFurukawa-LOSEYOURMIND.mp3'},
+{title : 'BoA、郑允浩',singer : 'Swing',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/BoA、郑允浩-Swing.mp3'},
+{title : 'Dana',singer : '到世界尽头',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/Dana-到世界尽头.mp3'},
+{title : 'davichi',singer : '即使恨也爱你',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/davichi-即使恨也爱你.mp3'},
+{title : 'Davichi',singer : '可笑的爱情',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/Davichi-可笑的爱情.mp3'},
+{title : 'davichi',singer : '悲伤的约定',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/davichi-悲伤的约定.mp3'},
+{title : 'davichi',singer : '爱情和战争',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/davichi-爱情和战争.mp3'},
+{title : 'DreamGirls殆死悲爱',singer : 'ImSorry',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/DreamGirls殆死悲爱-ImSorry.mp3'},
+{title : 'Fin.K.L',singer : 'BlueRain',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/Fin.K.L-BlueRain.mp3'},
+{title : 'jewelry',singer : 'again',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/jewelry-again.mp3'},
+{title : 'jewelry',singer : 'Super_Star',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/jewelry-Super_Star.mp3'},
+{title : 'Jewelry',singer : '更喜欢你',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/Jewelry-更喜欢你.mp3'},
+{title : 'Kara',singer : 'Honey',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/Kara-Honey.mp3'},
+{title : 'kiss',singer : '因为是女子',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/kiss-因为是女子.mp3'},
+{title : 'Lyn',singer : '歌信',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/Lyn-歌信.mp3'},
+{title : 'Lyn',singer : '爱情都是谎言',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/Lyn-爱情都是谎言.mp3'},
+{title : 'Psy',singer : '江南Style',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/Psy-江南Style.mp3'},
+{title : 'rania',singer : 'DrFeelGood',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/rania-DrFeelGood.mp3'},
+{title : 'sHarp',singer : '我的嘴唇如暖暖的咖啡',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/sHarp-我的嘴唇如暖暖的咖啡.mp3'},
+{title : 'tara',singer : 'LoveyDovey',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/tara-LoveyDovey.mp3'},
+{title : 'WAX',singer : 'Money',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WAX-Money.mp3'},
+{title : 'WAX',singer : '一通电话也不行',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WAX-一通电话也不行.mp3'},
+{title : 'WAX',singer : '余情',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WAX-余情.mp3'},
+{title : 'WAX',singer : '只有眼泪只有眼泪',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WAX-只有眼泪只有眼泪.mp3'},
+{title : 'WAX',singer : '坐着地铁',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WAX-坐着地铁.mp3'},
+{title : 'WAX',singer : '改变化装',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WAX-改变化装.mp3'},
+{title : 'WAX',singer : '渴望爱情',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WAX-渴望爱情.mp3'},
+{title : 'WAX',singer : '',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WAX.mp3'},
+{title : 'WonderGirls',singer : 'nobody',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/WonderGirls-nobody.mp3'},
+{title : '严正花',singer : '都走吧',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/严正花-都走吧.mp3'},
+{title : '冬季恋歌',singer : '从开始到现在',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/冬季恋歌-从开始到现在.mp3'},
+{title : '孙丹菲',singer : '星期六晚上',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/孙丹菲-星期六晚上.mp3'},
+{title : '少女时代',singer : 'Animal',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-Animal.mp3'},
+{title : '少女时代',singer : 'BeepBeep',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-BeepBeep.mp3'},
+{title : '少女时代',singer : 'GalaxySupernova',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-GalaxySupernova.mp3'},
+{title : '少女时代',singer : 'Gee(Japanesever.)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-Gee(Japanesever.).mp3'},
+{title : '少女时代',singer : 'Gee',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-Gee.mp3'},
+{title : '少女时代',singer : 'Holiday',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-Holiday.mp3'},
+{title : '少女时代',singer : 'HOOT',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-HOOT.mp3'},
+{title : '少女时代',singer : 'IntoTheNewWorld',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-IntoTheNewWorld.mp3'},
+{title : '少女时代',singer : 'Mr.Mr.(Japanesever.)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-Mr.Mr.(Japanesever.).mp3'},
+{title : '少女时代',singer : 'MrTaxi',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-MrTaxi.mp3'},
+{title : '少女时代',singer : 'Oh!(Japanesever.)',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-Oh!(Japanesever.).mp3'},
+{title : '少女时代',singer : 'Oh!',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-Oh!.mp3'},
+{title : '少女时代',singer : 'Paparazzi',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-Paparazzi.mp3'},
+{title : '少女时代',singer : 'PARTY',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-PARTY.mp3'},
+{title : '少女时代',singer : 'RunDevilRun',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-RunDevilRun.mp3'},
+{title : '少女时代',singer : 'TheBoys',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/少女时代-TheBoys.mp3'},
+{title : '我的野蛮女友',singer : '我相信',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/我的野蛮女友-我相信.mp3'},
+{title : '朴孝信',singer : '雪之花',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/朴孝信-雪之花.mp3'},
+{title : '朴惠京',singer : 'RAIN',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/朴惠京-RAIN.mp3'},
+{title : '朴慧京',singer : 'yesterday',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/朴慧京-yesterday.mp3'},
+{title : '朴慧京',singer : '结婚',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/朴慧京-结婚.mp3'},
+{title : '李孝利',singer : '10minutes',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/李孝利-10minutes.mp3'},
+{title : '李秀英',singer : 'AlsoILoveYou',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/李秀英-AlsoILoveYou.mp3'},
+{title : '李秀英',singer : 'NEVERAGAIN',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/李秀英-NEVERAGAIN.mp3'},
+{title : '李秀英',singer : '我们',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/李秀英-我们.mp3'},
+{title : '李贞贤',singer : '月亮啊月亮',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/李贞贤-月亮啊月亮.mp3'},
+{title : '李贞贤',singer : '独一无二',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/李贞贤-独一无二.mp3'},
+{title : '李贞贤',singer : '眉飞色舞',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/李贞贤-眉飞色舞.mp3'},
+{title : '柳真',singer : 'ChaCha',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/柳真-ChaCha.mp3'},
+{title : '淑熙',singer : '啦啦啦',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/淑熙-啦啦啦.mp3'},
+{title : '玉珠铉',singer : '仲夏夜之梦',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/玉珠铉-仲夏夜之梦.mp3'},
+{title : '申彗星',singer : 'LoveLetter',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/申彗星-LoveLetter.mp3'},
+{title : '申彗星',singer : '在那个位置',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/申彗星-在那个位置.mp3'},
+{title : '申彗星',singer : '我慢慢死去',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/申彗星-我慢慢死去.mp3'},
+{title : '申彗星',singer : '爱情病',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/申彗星-爱情病.mp3'},
+{title : '蓝色生死恋',singer : '祈祷',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/蓝色生死恋-祈祷.mp3'},
+{title : '裴勇俊',singer : 'MyMemory',cover  : '',src: 'https://vercel.11.wf/free163person/音乐视听/韩国音乐/裴勇俊-MyMemory.mp3'}
+
+];
+new SMusic({
+	musicList:musicList
+});
+</script>
+
+<div style="text-align:center;">
+<p>在线音乐：<a href="http://www.444.info/" target="_blank">听松阁</a></p>
+</div>
+</div>
+
+</div><!-- /content-wrap -->
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/main4.js"></script>
+		
+</body>
+</html>
